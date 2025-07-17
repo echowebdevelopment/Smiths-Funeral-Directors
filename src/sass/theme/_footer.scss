@@ -1,0 +1,55 @@
+h3.footer-title {
+    font-size: clamp(1.125rem, 0.6964rem + 0.6696vw, 1.5rem);
+    font-weight: normal;
+    color: $tertiary;
+}
+#footer-menus {
+    .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            margin-bottom: .5rem;
+            a {
+                color: $secondary;
+                text-decoration: none;
+                &:hover {
+                    color: $tertiary;
+                }
+            }
+        }   
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 20px;
+        }
+    }
+}
+.directions a {
+    color: $secondary;
+    &:hover {
+        color: $tertiary;
+    }
+}
+#footer-image {
+    max-height: 500px;
+    border-bottom: 10px solid $primary;
+    overflow: hidden;
+    background-color: $tertiary;
+    img {
+        opacity: 0.8;
+    }
+}
+#footer-menus img {
+    max-height: 100px;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 10px;
+    }
+}
+#footer-branding,
+#footer-branding .nap {
+    @include media-breakpoint-down(lg) {
+        @include media-breakpoint-up(md) {
+            flex-flow: row;
+            justify-content: space-between;
+        }
+    }
+}

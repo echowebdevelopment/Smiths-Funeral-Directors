@@ -49,6 +49,9 @@ function register_theme_menu_locations() {
     register_nav_menus( array(
         'top-menu'   => __( 'Top Menu', 'top-menu' ),
         'footer-menu' => __( 'Footer Menu', 'footer-menu' ),
+		'quick-links' => __('Quick Links'),
+        'support'     => __('Support'),
+        'information' => __('Information'),
     ) );
 }
 add_action( 'init', 'register_theme_menu_locations' );

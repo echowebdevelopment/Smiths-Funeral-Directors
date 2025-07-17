@@ -12383,8 +12383,8 @@ figure.woocommerce-product-gallery__wrapper {
 }
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?v1hlgj");
-  src: url("../fonts/icomoon.eot?v1hlgj#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?v1hlgj") format("truetype"), url("../fonts/icomoon.woff?v1hlgj") format("woff"), url("../fonts/icomoon.svg?v1hlgj#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?65wxdn");
+  src: url("../fonts/icomoon.eot?65wxdn#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?65wxdn") format("truetype"), url("../fonts/icomoon.woff?65wxdn") format("woff"), url("../fonts/icomoon.svg?65wxdn#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12392,8 +12392,7 @@ figure.woocommerce-product-gallery__wrapper {
 /**************************************/
 /* !- Icon Font                       */
 /**************************************/
-[class^=icon-],
-[class*=" icon-"] {
+[class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -12407,79 +12406,58 @@ figure.woocommerce-product-gallery__wrapper {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* !-- Social Media Icons */
-.icon-tiktok::before {
+.icon-available:before {
   content: "\e900";
+  color: #06163e;
 }
 
-.icon-x::before {
+.icon-Family-Owned:before {
   content: "\e901";
+  color: #06163e;
 }
 
-.icon-facebook-square::before {
+.icon-star:before {
   content: "\e902";
 }
 
-.icon-facebook::before {
-  content: "\ea90";
-}
-
-.icon-instagram::before {
-  content: "\ea92";
-}
-
-.icon-youtube::before {
-  content: "\ea9d";
-}
-
-.icon-linkedin-square::before {
-  content: "\eac9";
-}
-
-.icon-linkedin::before {
-  content: "\eaca";
-}
-
-.icon-pinterest::before {
-  content: "\ead1";
-}
-
-/* !-- Credit Card Icons */
-.icon-cc-visa::before {
-  content: "\f1f0";
-}
-
-.icon-cc-mastercard::before {
-  content: "\f1f1";
-}
-
-.icon-cc-discover::before {
-  content: "\f1f2";
-}
-
-.icon-cc-amex::before {
-  content: "\f1f3";
-}
-
-.icon-cc-paypal::before {
-  content: "\f1f4";
-}
-
-.icon-cc-stripe::before {
-  content: "\f1f5";
-}
-
-.icon-apple-pay::before {
+.icon-speech-mark-close:before {
   content: "\e903";
 }
 
-.icon-google-pay::before {
+.icon-speech-mark-open:before {
   content: "\e904";
 }
 
-/* !-- Other Icons */
-.icon-share::before {
-  content: "\ea82";
+.icon-arrow-left:before {
+  content: "\e905";
+}
+
+.icon-arrow-down:before {
+  content: "\e906";
+}
+
+.icon-arrow-up:before {
+  content: "\e907";
+}
+
+.icon-arrow-right:before {
+  content: "\e908";
+}
+
+.icon-LinkedIn:before {
+  content: "\e909";
+}
+
+.icon-X_logo:before {
+  content: "\e90a";
+}
+
+.icon-instagram:before {
+  content: "\e90b";
+}
+
+.icon-Facebook:before {
+  content: "\e90c";
 }
 
 /**************************************/
@@ -12722,6 +12700,9 @@ body {
 #wrapper-navbar {
   box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.4156862745);
 }
+#wrapper-navbar a:not(.btn):hover {
+  color: #BCAF9C;
+}
 
 #main-nav a {
   color: #06163E;
@@ -12753,22 +12734,6 @@ body {
   padding: 20px 0;
 }
 
-.phone-number {
-  font-size: clamp(1.5rem, 1.3239rem + 0.5634vw, 2rem);
-  color: #06163E;
-  font-weight: 500;
-  line-height: normal;
-}
-.phone-number a {
-  color: #06163E;
-  text-decoration: none;
-}
-.phone-number span {
-  display: block;
-  color: #BCAF9C;
-  font-size: 14px;
-}
-
 #main-menu {
   gap: 10px;
 }
@@ -12780,6 +12745,19 @@ body {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.dropdown-toggle::after {
+  content: "\e906";
+  font-family: icomoon !important;
+  border: 0 !important;
+  font-size: 5px;
+  margin-left: 0.7rem;
+}
+
+hr {
+  opacity: 1;
+  color: #06163E;
 }
 
 .btn, .wpcf7 input[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button {
@@ -12797,6 +12775,131 @@ body {
   background-color: #6889A3;
   color: #fff;
   border: 1px solid #BCAF9C;
+}
+
+.bg-gray {
+  background-color: #F8F8F8;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+.social-icons a {
+  color: #06163E;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #BCAF9C;
+}
+
+.phone-number {
+  font-size: clamp(1.5rem, 1.3239rem + 0.5634vw, 2rem);
+  color: #06163E;
+  font-weight: 500;
+  line-height: normal;
+}
+.phone-number a {
+  color: #06163E;
+  text-decoration: none;
+}
+.phone-number span {
+  display: block;
+  color: #BCAF9C;
+  font-size: 14px;
+}
+
+.email-address {
+  font-size: clamp(1rem, 0.8571rem + 0.2232vw, 1.125rem);
+  color: #06163E;
+  font-weight: 500;
+  line-height: normal;
+}
+.email-address a {
+  color: #06163E;
+  text-decoration: none;
+}
+.email-address span {
+  display: block;
+  color: #BCAF9C;
+  font-size: 14px;
+}
+
+#footer-branding {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+#footer-branding a:hover {
+  color: #BCAF9C;
+}
+
+.nap {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+h3.footer-title, .footer-title.h3 {
+  font-size: clamp(1.125rem, 0.6964rem + 0.6696vw, 1.5rem);
+  font-weight: normal;
+  color: #BCAF9C;
+}
+
+#footer-menus .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer-menus .menu li {
+  margin-bottom: 0.5rem;
+}
+#footer-menus .menu li a {
+  color: #06163E;
+  text-decoration: none;
+}
+#footer-menus .menu li a:hover {
+  color: #BCAF9C;
+}
+@media (max-width: 991.98px) {
+  #footer-menus .menu {
+    margin-bottom: 20px;
+  }
+}
+
+.directions a {
+  color: #06163E;
+}
+.directions a:hover {
+  color: #BCAF9C;
+}
+
+#footer-image {
+  max-height: 500px;
+  border-bottom: 10px solid #D7ECF5;
+  overflow: hidden;
+  background-color: #BCAF9C;
+}
+#footer-image img {
+  opacity: 0.8;
+}
+
+#footer-menus img {
+  max-height: 100px;
+}
+@media (max-width: 767.98px) {
+  #footer-menus img {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 991.98px) and (min-width: 768px) {
+  #footer-branding,
+  #footer-branding .nap {
+    flex-flow: row;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
