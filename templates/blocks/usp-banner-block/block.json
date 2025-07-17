@@ -1,0 +1,13 @@
+{
+	"name": "acf/usp-banner",
+	"title": "USP Banner Block",
+	"description": "A full-width banner block for displaying Unique Selling Points (USPs) with icons or images.",
+	"category": "widgets",
+	"icon": "text-page",
+	"keywords": ["USP", "USP Banner", "features", "selling points", "banner"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "usp-banner-block.php"
+	},
+	"align": "full"
+}

@@ -78,3 +78,99 @@ body.understrap-no-sidebar {
 		}
 	}
 }
+
+
+/*Page Title Block*/
+.page-title-block {
+    min-height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	.text-block__header {
+		z-index: 2;
+		position: relative;	
+		background: linear-gradient(
+		90deg,
+		rgba(218, 237, 255, 0.4) 0%,
+		rgba(218, 237, 255, 0.4) 41%,
+		rgba(218, 237, 255, 0) 100%
+		) no-repeat padding-box;
+		width: 100%;
+    	padding: 2rem;
+		color: $white;
+		h1 {
+			font-weight: 300 !important;
+		}
+	}
+}
+.page-title-block img.text-block__img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+	z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+#breadcrumbs {
+	font-size: 14px;
+	font-weight: 500;
+	a {
+		color: $secondary;
+		text-decoration: none;
+	}
+	span:before {
+		color: $tertiary;
+    	font-size: 10px;
+	}
+	span {    
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+}
+
+/* USP Banner Block */
+.usp-image svg,
+.usp-image img {
+	max-width: 100%;
+	max-height: 100px; /* adjust as needed */
+	width: auto;
+	height: auto;
+	display: inline-block;
+}
+.usp-image {
+	overflow: visible;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px; /* fixed height container if needed */
+}
+
+/* Image Divider Block */
+.photo-divider {
+	position: relative;
+}
+.photo-divider img {
+    min-height: 200px;
+    object-fit: cover;
+}
+.photo-divider:before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, .2);
+    width: 100%;
+    height: 100%;
+}
+/* Advert Block */
+
+.image-container {
+    position: relative;
+    min-height: 400px;
+	img {
+		position: absolute;
+    	object-fit: cover;
+	}
+}

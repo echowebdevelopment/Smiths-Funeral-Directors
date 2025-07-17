@@ -17,6 +17,10 @@ function register_acf_blocks() {
 	$blocks = array(
 		'faqs-block',
 		'text-image-block',
+		'page-title-block',
+		'usp-banner-block',
+		'image-divider-block',
+		'advert-block',
 	);
 
 	foreach ( $blocks as $block ) {

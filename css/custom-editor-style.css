@@ -5443,6 +5443,104 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   border: 1px solid transparent;
 }
 
+/*Page Title Block*/
+.page-title-block {
+  min-height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-title-block .text-block__header {
+  z-index: 2;
+  position: relative;
+  background: linear-gradient(90deg, rgba(218, 237, 255, 0.4) 0%, rgba(218, 237, 255, 0.4) 41%, rgba(218, 237, 255, 0) 100%) no-repeat padding-box;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
+}
+.page-title-block .text-block__header h1, .page-title-block .text-block__header .h1 {
+  font-weight: 300 !important;
+}
+
+.page-title-block img.text-block__img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#breadcrumbs {
+  font-size: 14px;
+  font-weight: 500;
+}
+#breadcrumbs a {
+  color: #06163E;
+  text-decoration: none;
+}
+#breadcrumbs span:before {
+  color: #BCAF9C;
+  font-size: 10px;
+}
+#breadcrumbs span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* USP Banner Block */
+.usp-image svg,
+.usp-image img {
+  max-width: 100%;
+  max-height: 100px; /* adjust as needed */
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+
+.usp-image {
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px; /* fixed height container if needed */
+}
+
+/* Image Divider Block */
+.photo-divider {
+  position: relative;
+}
+
+.photo-divider img {
+  min-height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.photo-divider:before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+/* Advert Block */
+.image-container {
+  position: relative;
+  min-height: 400px;
+}
+.image-container img {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .components-circular-option-picker__option {
   border-radius: 50%;
 }

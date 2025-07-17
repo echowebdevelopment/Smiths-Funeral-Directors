@@ -1,0 +1,13 @@
+{
+	"name": "acf/page-title",
+	"title": "Page Title Block",
+	"description": "Page Title Block for displaying the title of a page.",
+	"category": "widgets",
+	"icon": "text-page",
+	"keywords": ["page title", "page", "title"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "page-title-block.php"
+	},
+	"align": "full"
+}

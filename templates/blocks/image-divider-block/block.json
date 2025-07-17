@@ -1,0 +1,13 @@
+{
+	"name": "acf/image-divider",
+	"title": "Image Divider Block",
+	"description": "A full-width image block used as a visual divider between sections.",
+	"category": "widgets",
+	"icon": "text-page",
+	"keywords": ["image", "image divider", "divider"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "image-divider-block.php"
+	},
+	"align": "full"
+}

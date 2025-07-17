@@ -1,0 +1,13 @@
+{
+	"name": "acf/advert-block",
+	"title": "Advert Block",
+	"description": "A full-width block for displaying a promotional image or advertisement.",
+	"category": "widgets",
+	"icon": "megaphone",
+	"keywords": ["advert", "promotion", "banner", "ad", "marketing"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "advert-block.php"
+	},
+	"align": "full"
+}

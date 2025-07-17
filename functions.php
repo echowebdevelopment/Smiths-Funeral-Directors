@@ -55,3 +55,43 @@ function register_theme_menu_locations() {
     ) );
 }
 add_action( 'init', 'register_theme_menu_locations' );
+
+
+add_filter( 'wpseo_breadcrumb_separator', 'custom_yoast_breadcrumb_separator' );
+function custom_yoast_breadcrumb_separator( $separator ) {
+    return ' <span class="icon-arrow-right"></span> ';
+}
+
+function enqueue_usp_slick_slider() {
+    wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/slick/slick.css' );
+    wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/slick/slick-theme.css' );
+    wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/slick/slick.min.js', array( 'jquery' ), null, true );
+
+    wp_add_inline_script( 'slick-js', "
+        jQuery(document).ready(function($){
+            $('.usp-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    " );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_usp_slick_slider' );
