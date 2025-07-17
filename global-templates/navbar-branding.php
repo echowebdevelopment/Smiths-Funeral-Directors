@@ -26,8 +26,15 @@ if ( ! has_custom_logo() ) { ?>
 		</a>
 
 	<?php endif; ?>
-
+	<p class="site-description" itemprop="description">
+		<?php bloginfo( 'description' ); ?>
+	</p>	
 	<?php
 } else {
 	the_custom_logo();
+	?>
+	<p class="site-description d-none d-lg-block" itemprop="description">
+		<?php bloginfo( 'description' ); ?>
+	</p>	
+<?php
 }

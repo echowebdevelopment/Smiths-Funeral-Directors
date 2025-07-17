@@ -431,7 +431,7 @@ progress {
 }
 
 :root {
-  --bs-blue: #0d6efd;
+  --bs-blue: #D7ECF5;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -439,7 +439,7 @@ progress {
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
-  --bs-teal: #3ea9a0;
+  --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
   --bs-white: #fff;
@@ -454,16 +454,16 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #3ea9a0;
-  --bs-secondary: #6c757d;
+  --bs-primary: #D7ECF5;
+  --bs-secondary: #06163E;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 62, 169, 160;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-rgb: 215, 236, 245;
+  --bs-secondary-rgb: 6, 22, 62;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -493,8 +493,8 @@ progress {
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #3ea9a0;
-  --bs-link-hover-color: #328780;
+  --bs-link-color: #D7ECF5;
+  --bs-link-hover-color: #acbdc4;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -577,13 +577,13 @@ progress {
 
 .table-primary {
   --bs-table-color: #000;
-  --bs-table-bg: #d8eeec;
-  --bs-table-border-color: #c2d6d4;
-  --bs-table-striped-bg: #cde2e0;
+  --bs-table-bg: #f7fbfd;
+  --bs-table-border-color: #dee2e4;
+  --bs-table-striped-bg: #ebeef0;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #c2d6d4;
+  --bs-table-active-bg: #dee2e4;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #c8dcda;
+  --bs-table-hover-bg: #e4e8ea;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -591,13 +591,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: #e2e3e5;
-  --bs-table-border-color: #cbccce;
-  --bs-table-striped-bg: #d7d8da;
+  --bs-table-bg: #cdd0d8;
+  --bs-table-border-color: #b9bbc2;
+  --bs-table-striped-bg: #c3c6cd;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #cbccce;
+  --bs-table-active-bg: #b9bbc2;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-bg: #bec0c8;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -878,12 +878,12 @@ progress {
 
 .text-bg-primary {
   color: #000 !important;
-  background-color: RGBA(62, 169, 160, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(215, 236, 245, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
   color: #fff !important;
-  background-color: RGBA(108, 117, 125, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(6, 22, 62, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-success {
@@ -917,17 +917,17 @@ progress {
 }
 
 .link-primary {
-  color: #3ea9a0 !important;
+  color: #D7ECF5 !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #65bab3 !important;
+  color: #dff0f7 !important;
 }
 
 .link-secondary {
-  color: #6c757d !important;
+  color: #06163E !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #565e64 !important;
+  color: #051232 !important;
 }
 
 .link-success {
@@ -5048,16 +5048,16 @@ progress {
 }
 .has-blue-color,
 .has-blue-color:visited {
-  color: #0d6efd;
+  color: #D7ECF5;
 }
 
 .has-blue-background-color {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #D7ECF5;
+  border-color: #D7ECF5;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-blue-color {
-  color: #0d6efd;
+  color: #D7ECF5;
 }
 
 .has-indigo-color,
@@ -5160,16 +5160,16 @@ progress {
 
 .has-teal-color,
 .has-teal-color:visited {
-  color: #3ea9a0;
+  color: #20c997;
 }
 
 .has-teal-background-color {
-  background-color: #3ea9a0;
-  border-color: #3ea9a0;
+  background-color: #20c997;
+  border-color: #20c997;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-teal-color {
-  color: #3ea9a0;
+  color: #20c997;
 }
 
 .has-cyan-color,
@@ -5244,30 +5244,30 @@ progress {
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #3ea9a0;
+  color: #D7ECF5;
 }
 
 .has-primary-background-color {
-  background-color: #3ea9a0;
-  border-color: #3ea9a0;
+  background-color: #D7ECF5;
+  border-color: #D7ECF5;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-primary-color {
-  color: #3ea9a0;
+  color: #D7ECF5;
 }
 
 .has-secondary-color,
 .has-secondary-color:visited {
-  color: #6c757d;
+  color: #06163E;
 }
 
 .has-secondary-background-color {
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #06163E;
+  border-color: #06163E;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-secondary-color {
-  color: #6c757d;
+  color: #06163E;
 }
 
 .has-success-color,

@@ -11,7 +11,7 @@
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 add_action( 'init', function() {
-	register_post_type( 'echo_reviews', array(
+	/*register_post_type( 'echo_reviews', array(
 		'labels' => array(
 			'name' => 'Reviews',
 			'singular_name' => 'Review',
@@ -160,7 +160,7 @@ add_action( 'init', function() {
 		),
 		'can_export' => false,
 		'delete_with_user' => false,
-	) );
+	) );*/
 
 } );
 

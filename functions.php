@@ -43,3 +43,12 @@ if ( class_exists( 'WooCommerce' ) ) {
 foreach ( $echo_theme_includes as $file ) {
 	require_once get_theme_file_path( $echo_theme_inc_dir . $file );
 }
+
+
+function register_theme_menu_locations() {
+    register_nav_menus( array(
+        'top-menu'   => __( 'Top Menu', 'top-menu' ),
+        'footer-menu' => __( 'Footer Menu', 'footer-menu' ),
+    ) );
+}
+add_action( 'init', 'register_theme_menu_locations' );
