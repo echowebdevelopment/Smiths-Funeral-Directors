@@ -379,3 +379,22 @@ button.slick-next.slick-arrow {
 		color: $secondary;
 	}
 }
+
+/* Table Block */
+tr {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    background: transparent;
+    border-bottom: 1px solid $secondary;
+}
+td, th {
+    border: none;
+    background: 0 0;
+    padding: 1rem .5rem !important;
+	font-weight: 500;;
+	color: $secondary;
+}
+td {
+	font-size: clamp(1rem, 0.956rem + 0.1408vw, 1.125rem);
+}

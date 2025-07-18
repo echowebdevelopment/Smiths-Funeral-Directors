@@ -18,7 +18,9 @@ hr {
         border: 1px solid $tertiary;
     }
 }
-
+.block-buttons .btn {
+    margin: 10px;
+}
 .bg-gray {
     background-color: $gray;
 }
@@ -76,4 +78,52 @@ hr {
     display: flex;
     flex-flow: column;
     gap: 1rem;
+}
+
+
+ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons) {
+  list-style: none;
+}
+
+ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons) li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+}
+
+ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons) li::before {
+    content: '•'; /* Unicode bullet */
+    position: absolute;
+    left: 0;
+    font-size: clamp(1.125rem, 0.993rem + 0.4225vw, 1.5rem);
+    color: $secondary;
+    line-height: normal;
+    top: 0;
+}
+
+ol {
+  counter-reset: item;
+  list-style: none;
+}
+
+ol li {
+  counter-increment: item;
+  margin: 0.5em 0;
+  position: relative;
+  padding-left: 2rem;
+}
+
+ol li::before {
+    content: counter(item);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: $secondary;
+    font-weight: 500;
+    font-size: clamp(1.125rem, 0.993rem + 0.4225vw, 1.5rem);
+    line-height: normal;    
+    border-right: 1px solid $primary;
+    padding-right: .3rem;
+    height: 100%;
+    min-width: 22px;
 }

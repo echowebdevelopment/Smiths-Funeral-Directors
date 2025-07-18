@@ -24,6 +24,7 @@ function register_acf_blocks() {
 		'quote-block',
 		'testimonials-block',
 		'card-block',
+		'table-block',
 	);
 
 	foreach ( $blocks as $block ) {

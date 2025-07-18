@@ -1,0 +1,13 @@
+{
+	"name": "acf/table-block",
+	"title": "Table Block",
+	"description": "A full-width block for displaying structured tabular data such as pricing, comparisons, or specifications.",
+	"category": "widgets",
+	"icon": "table-col-after",
+	"keywords": ["table", "data", "pricing", "comparison", "specifications"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "table-block.php"
+	},
+	"align": "full"
+}
