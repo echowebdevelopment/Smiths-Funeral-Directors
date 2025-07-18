@@ -12543,6 +12543,61 @@ td {
   font-size: clamp(1rem, 0.956rem + 0.1408vw, 1.125rem);
 }
 
+/* Accordion Block */
+.accordion-items__item__question {
+  font-size: clamp(1.5rem, 1.3239rem + 0.5634vw, 2rem);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.accordion-items__item {
+  border-bottom: solid 1px #06163E;
+}
+
+.accordion__answer {
+  padding: 1rem 1rem 2rem;
+}
+
+.accordion-items__item__question {
+  position: relative;
+  cursor: pointer;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-items__item__question::after {
+  content: "\e908" !important;
+  font-family: "icomoon";
+  border: 1.5px solid #bcaf9c !important;
+  min-width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 50%;
+  font-size: 20px;
+  color: #BCAF9C;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when <details> is open */
+details[open] .accordion-items__item__question::after {
+  transform: rotate(270deg);
+  transition: transform 0.3s ease;
+}
+
 /*
 * Use existing Bootstrap 4/5 classes and
 * variables to extend - override CF7 style
@@ -13194,17 +13249,17 @@ hr {
   gap: 1rem;
 }
 
-ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons) {
+ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons, .slick-dots) {
   list-style: none;
 }
 
-ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons) li {
+ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons, .slick-dots) li {
   position: relative;
   margin-bottom: 0.5rem;
   padding-left: 2rem;
 }
 
-ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons) li::before {
+ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons, .slick-dots) li::before {
   content: "•"; /* Unicode bullet */
   position: absolute;
   left: 0;

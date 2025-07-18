@@ -81,17 +81,17 @@ hr {
 }
 
 
-ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons) {
+ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons, .slick-dots) {
   list-style: none;
 }
 
-ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons) li {
+ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons, .slick-dots) li {
   position: relative;
   margin-bottom: 0.5rem;
   padding-left: 2rem;
 }
 
-ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons) li::before {
+ul:not(.navbar-nav, .dropdown-menu, .menu, .social-icons, .slick-dots) li::before {
     content: '•'; /* Unicode bullet */
     position: absolute;
     left: 0;

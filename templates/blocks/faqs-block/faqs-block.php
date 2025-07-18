@@ -31,7 +31,7 @@ $link = get_field('link_all_faqs');
 
 <?php if (have_rows('questions')): ?>
 	<div class="accordion-block block block--margin">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<?php if ($heading) { ?>
