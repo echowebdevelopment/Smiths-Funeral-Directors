@@ -86,7 +86,6 @@ body.understrap-no-sidebar {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
 	.text-block__header {
 		z-index: 2;
 		position: relative;	
@@ -99,6 +98,7 @@ body.understrap-no-sidebar {
 		width: 100%;
     	padding: 2rem;
 		color: $white;
+		max-width: max-content;
 		h1 {
 			font-weight: 300 !important;
 		}
@@ -172,5 +172,210 @@ body.understrap-no-sidebar {
 	img {
 		position: absolute;
     	object-fit: cover;
+	}
+}
+/* Quote Block */
+.pull-quote-text {
+    font-size: clamp(1.375rem, 0.8036rem + 0.8929vw, 1.875rem);
+    font-style: italic;
+	color: $secondary;
+	font-weight: 300;
+}
+.pull-quote-name {
+	font-size: clamp(1rem, 0.8571rem + 0.2232vw, 1.125rem);
+	font-weight: 500;
+	text-transform: capitalize;
+}
+.pull-quote-block {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+	.align-items-stretch .pull-quote-text,
+	.align-items-stretch .pull-quote-name{
+		max-width: 564px;
+		margin: auto;
+	}
+}
+
+/* Testimonials Block */
+.testimonial-slider-section {
+	.ti-widget-container, 
+	.ti-widget.ti-goog>.ti-widget-container>.ti-header, .ti-widget.ti-goog>.ti-widget-container>.ti-footer {
+		background-color: transparent !important;
+		box-shadow: none !important;
+	}
+}
+.testimonial-content {
+    font-size: clamp(1.125rem, 0.993rem + 0.4225vw, 1.5rem);
+	font-weight: 300;
+	font-style: italic;
+	line-height: 1.6em;
+	color: $secondary
+}
+.testimonial-author {
+    font-size: clamp(1.125rem, 0.993rem + 0.4225vw, 1.5rem);
+	font-weight: 500;
+	color: $secondary
+}
+.slick-dots li {
+	width: auto !important;
+}
+.slick-dots li button {
+	border: 1px solid $tertiary !important;
+    width: 17px !important;
+    height: 17px !important;
+	border-radius: 100%;
+	&:before {
+		display: none !important;
+	}
+}
+
+.slick-dots li:hover button {
+	background-color: $tertiary !important;
+}
+.slick-dots li.slick-active button {
+	background-color: $tertiary !important;
+	width: 37px !important;
+	border-radius: 30px !important;
+}
+button.slick-prev.slick-arrow,
+button.slick-next.slick-arrow {
+    border: 1.5px solid $tertiary !important;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	&:hover {
+		background-color: $tertiary !important;
+		color: $white !important;
+	}
+}
+.testimonial-slider {
+	.slick-prev:before, .slick-next:before {
+		color: $tertiary !important;
+	}
+	.slick-prev {
+		left: 0 !important;
+		&::before {
+			content: "\e905" !important;
+			font-family: 'icomoon' !important;
+			opacity: 1 !important;
+			padding-right: 3px;
+		}
+		&:hover::before {
+			color: $white !important;
+		}
+	}
+	.slick-next {
+		right: 0 !important;
+		&::before {
+			content: "\e908" !important;
+			font-family: 'icomoon' !important;
+			opacity: 1 !important;
+			padding-left: 3px;
+		}
+		&:hover::before {
+			color: $white !important;
+		}
+	}
+
+	.testimonial-item i {
+		position: absolute;
+		font-size: clamp(1.875rem, 1.4349rem + 1.4085vw, 3.125rem);
+		color: $secondary;
+	}
+	.testimonial-item {
+		padding: 1rem 6rem;
+	}
+	i.icon-speech-mark-open {
+		top: 0;
+		left: 0;
+	}
+	i.icon-speech-mark-close {
+		right: 0;
+		bottom: 0;
+	}
+	ul.slick-dots {
+		display: flex;
+		justify-content: end;
+		position: relative;
+		bottom: 0;
+		margin-top: 2rem;
+	}
+	.slick-slide {
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+	@include media-breakpoint-down(md) {
+		.slick-slide {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		.testimonial-item {
+			padding: 1rem;
+		}
+		.testimonial-item i {
+			position: relative;
+		}
+		.icon-speech-mark-open {
+			margin-bottom: 1rem;
+			display: flex;
+		}
+		i.icon-speech-mark-close {
+			margin-top: 1rem;
+			display: flex;
+			justify-content: end;
+		}
+	}
+}
+
+/* Card Block */
+.card-block {
+	.card {
+		img {
+			border-radius: 0 !important;
+			transition: transform 0.3s ease-in-out;
+		}
+		.card-img-wrapper {
+			object-fit: cover;
+			aspect-ratio: 1;
+    		max-height: 300px;
+			background: white;
+			overflow: hidden;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+		}
+		.card-body {
+			background-color: $primary;
+			transition: background-color 0.3s ease-in-out;
+		}
+		&:hover {
+			img {
+				transform: scale(1.05);
+				transition: transform 0.3s ease-in-out;
+			}
+			.card-body {
+				background-color: $gray;
+				transition: background-color 0.3s ease-in-out;
+			}
+		}
+	}
+	.card-title {
+		font-size: clamp(1.25rem, 1.0739rem + 0.5634vw, 1.75rem);
+		color: $secondary;
+	}
+	a {
+		text-decoration: none;
+		color: $secondary;
 	}
 }

@@ -92,6 +92,16 @@ function enqueue_usp_slick_slider() {
                 ]
             });
         });
+        jQuery(document).ready(function($) {
+            $('.testimonial-slider').slick({
+                arrows: true,
+                dots: true,
+                autoplay: false,
+                autoplaySpeed: 5000,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
     " );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_usp_slick_slider' );

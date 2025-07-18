@@ -1,0 +1,13 @@
+{
+	"name": "acf/testimonials-block",
+	"title": "Testimonials Block",
+	"description": "A full-width block for displaying multiple testimonials or customer reviews, optionally with ratings or author details.",
+	"category": "widgets",
+	"icon": "format-quote",
+	"keywords": ["testimonials", "reviews", "customer feedback", "quote", "slider"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "testimonials-block.php"
+	},
+	"align": "full"
+}

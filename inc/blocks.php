@@ -21,6 +21,9 @@ function register_acf_blocks() {
 		'usp-banner-block',
 		'image-divider-block',
 		'advert-block',
+		'quote-block',
+		'testimonials-block',
+		'card-block',
 	);
 
 	foreach ( $blocks as $block ) {

@@ -1,0 +1,13 @@
+{
+	"name": "acf/card-block",
+	"title": "Card Block",
+	"description": "A flexible block for displaying content cards such as features, services, team members, or posts.",
+	"category": "widgets",
+	"icon": "screenoptions",
+	"keywords": ["card", "grid", "feature", "content block", "services", "team"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "card-block.php"
+	},
+	"align": "full"
+}

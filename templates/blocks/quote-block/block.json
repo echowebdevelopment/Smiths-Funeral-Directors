@@ -1,0 +1,13 @@
+{
+	"name": "acf/quote-block",
+	"title": "Quote Block",
+	"description": "A full-width block for displaying a quote, testimonial, or featured statement.",
+	"category": "widgets",
+	"icon": "format-quote",
+	"keywords": ["quote", "testimonial", "statement", "review", "blockquote"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "quote-block.php"
+	},
+	"align": "full"
+}
