@@ -17,8 +17,11 @@ $heading_size = get_field( 'heading_size' );
 $heading_size = in_array( $heading_size, $valid_headings ) ? $heading_size : 'h1';
 
 // Get ACF heading or fallback to page title
+
 $acf_heading = get_field( 'heading_page_title' );
-$heading_text = $acf_heading ?: get_the_title();
+$heading_text = $acf_heading
+    ?: ( $args['title'] ?? null )
+    ?: get_the_title();
 
 // Generate heading HTML
 $heading = sprintf(

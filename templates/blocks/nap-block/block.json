@@ -1,0 +1,13 @@
+{
+	"name": "acf/nap-block",
+	"title": "NAP + Map Block",
+	"description": "A full-width block for displaying business contact information (Name, Address, Phone) alongside an embedded map.",
+	"category": "widgets",
+	"icon": "location",
+	"keywords": ["contact", "map", "location", "NAP", "address", "google maps"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "nap-block.php"
+	},
+	"align": "full"
+}

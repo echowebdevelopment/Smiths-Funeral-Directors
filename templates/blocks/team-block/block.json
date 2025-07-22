@@ -1,0 +1,13 @@
+{
+	"name": "acf/team-block",
+	"title": "Team Block",
+	"description": "A full-width block for displaying team members with photos, names, positions, and optional bios or links.",
+	"category": "widgets",
+	"icon": "groups",
+	"keywords": ["team", "staff", "members", "people", "about us"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "team-block.php"
+	},
+	"align": "full"
+}

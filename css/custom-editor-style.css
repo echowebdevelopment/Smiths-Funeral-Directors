@@ -5493,6 +5493,10 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   gap: 1rem;
 }
 
+.page-title-block .text-block__heading {
+  max-width: 767px;
+}
+
 /* USP Banner Block */
 .usp-image svg,
 .usp-image img {

@@ -1,0 +1,13 @@
+{
+	"name": "acf/section-title-block",
+	"title": "Section Title Block",
+	"description": "A block for displaying a section heading with optional subheading or styling options.",
+	"category": "widgets",
+	"icon": "editor-textcolor",
+	"keywords": ["title", "heading", "section", "subheading", "text"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "section-title-block.php"
+	},
+	"align": "full"
+}

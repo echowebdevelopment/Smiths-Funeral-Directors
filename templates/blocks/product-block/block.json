@@ -1,0 +1,13 @@
+{
+	"name": "acf/product-block",
+	"title": "Product Block",
+	"description": "A full-width block for showcasing products with images, titles, descriptions, and optional links or prices.",
+	"category": "widgets",
+	"icon": "cart",
+	"keywords": ["product", "shop", "ecommerce", "store", "catalog"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "product-block.php"
+	},
+	"align": "full"
+}

@@ -130,7 +130,9 @@ body.understrap-no-sidebar {
 		gap: 1rem;
 	}
 }
-
+.page-title-block .text-block__heading {
+    max-width: 767px;
+}
 /* USP Banner Block */
 .usp-image svg,
 .usp-image img {

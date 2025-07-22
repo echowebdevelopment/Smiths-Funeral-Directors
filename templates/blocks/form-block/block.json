@@ -1,0 +1,13 @@
+{
+	"name": "acf/form-block",
+	"title": "Contact Form 7 Select Block",
+	"description": "A full-width block for embedding a Contact Form 7 form using a dropdown selector.",
+	"category": "widgets",
+	"icon": "email-alt",
+	"keywords": ["form", "contact", "CF7", "contact form 7", "enquiry", "form block"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "form-block.php"
+	},
+	"align": "full"
+}

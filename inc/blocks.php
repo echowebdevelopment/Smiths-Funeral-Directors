@@ -25,6 +25,11 @@ function register_acf_blocks() {
 		'testimonials-block',
 		'card-block',
 		'table-block',
+		'product-block',
+		'team-block',
+		'section-title-block',
+		'nap-block',
+		'form-block'
 	);
 
 	foreach ( $blocks as $block ) {
