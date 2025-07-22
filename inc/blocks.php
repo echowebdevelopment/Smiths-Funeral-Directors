@@ -29,7 +29,8 @@ function register_acf_blocks() {
 		'team-block',
 		'section-title-block',
 		'nap-block',
-		'form-block'
+		'form-block',
+		'megamenu-block'
 	);
 
 	foreach ( $blocks as $block ) {

@@ -25,7 +25,7 @@ $align_class = 'text-' . esc_attr($alignment);
 <section class="cf7-block block block--margin">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 <?php echo esc_attr($align_class); ?>">
+			<div class="col-lg-12 <?php echo esc_attr($align_class); ?>">
 
 				<?php if ($form_title): ?>
 					<h2 class="cf7-block__title"><?php echo esc_html($form_title); ?></h2>
