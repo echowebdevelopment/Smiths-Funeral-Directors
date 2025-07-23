@@ -13,9 +13,9 @@ defined('ABSPATH') || exit;
 $section_title = get_field('page_section_title');
 ?>
 
-<div class="text-block text-image-block block block--margin">
+<div class="text-block text-image-block block">
 <?php if ($section_title) : ?>
-    <div class="section-title text-center mb-5">
+    <div class="section-title text-center mt-5">
         <h2><?php echo esc_html($section_title); ?></h2>
     </div>
 <?php endif; ?>
