@@ -62,7 +62,9 @@ $section_title = get_field('page_section_title');
                         <?php endif; ?>
 
                         <?php if ($content) : ?>
-                            <?php echo wp_kses_post($content); ?>
+							<div class="<?php echo esc_attr(trim("$auxCenter")); ?>">
+                           	 <?php echo wp_kses_post($content); ?>
+							</div>
                         <?php endif; ?>
 
                         <?php if (have_rows('buttons_text_image')) : ?>
