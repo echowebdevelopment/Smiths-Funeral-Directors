@@ -5524,6 +5524,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   min-height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
+  max-height: 55vh;
 }
 
 .photo-divider:before {
