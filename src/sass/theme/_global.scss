@@ -18,8 +18,12 @@ hr {
         border: 1px solid $tertiary;
     }
 }
+
 .block-buttons .btn {
     margin: 10px;
+    &:first-child {
+        margin-left: 0;
+    }
 }
 .bg-gray {
     background-color: $gray;
@@ -292,8 +296,8 @@ textarea {
 }
 
 .text-image-block .container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     border-bottom: 1px solid $secondary;
     &:last-child {
         border-bottom: 0;

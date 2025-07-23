@@ -13198,6 +13198,9 @@ hr {
 .block-buttons .btn, .block-buttons .wpcf7 input[type=submit], .wpcf7 .block-buttons input[type=submit], .block-buttons .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .block-buttons a.button, .block-buttons .woocommerce-info a.button, .woocommerce-info .block-buttons a.button {
   margin: 10px;
 }
+.block-buttons .btn:first-child, .block-buttons .wpcf7 input[type=submit]:first-child, .wpcf7 .block-buttons input[type=submit]:first-child, .block-buttons .woocommerce-notices-wrapper .woocommerce-message a.button:first-child, .woocommerce-notices-wrapper .woocommerce-message .block-buttons a.button:first-child, .block-buttons .woocommerce-info a.button:first-child, .woocommerce-info .block-buttons a.button:first-child {
+  margin-left: 0;
+}
 
 .bg-gray {
   background-color: #F8F8F8;
@@ -13494,8 +13497,8 @@ textarea {
   }
 }
 .text-image-block .container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   border-bottom: 1px solid #06163E;
 }
 .text-image-block .container:last-child {
