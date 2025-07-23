@@ -51,9 +51,9 @@ $section_title = get_field('page_section_title');
         ?>
 
             <div class="container">
-                <div class="row justify-content-center align-items-center g-5 <?php echo esc_attr($auxClass); ?>">
+                <div class="row justify-content-center align-items-center gx-5 <?php echo esc_attr($auxClass); ?>">
 
-                    <div class="col-12 <?php echo $has_image ? 'col-xl-6 order-2 order-xl-0 mt-5 mt-xl-0' : 'col-xl-12'; ?>">
+                    <div class="col-12 <?php echo $has_image ? 'col-xl-6 order-2 order-xl-0' : 'col-xl-12'; ?>">
                         <?php if ($has_heading) : ?>
                             <div class="text-block__header <?php echo esc_attr(trim("$auxCenter $auxaMargin")); ?>">
                                 <?php echo $heading; ?>
