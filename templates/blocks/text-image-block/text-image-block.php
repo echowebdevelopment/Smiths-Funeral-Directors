@@ -13,6 +13,7 @@ defined('ABSPATH') || exit;
 $section_title = get_field('page_section_title');
 ?>
 
+<div class="text-block text-image-block block block--margin">
 <?php if ($section_title) : ?>
     <div class="section-title text-center mb-5">
         <h2><?php echo esc_html($section_title); ?></h2>
@@ -49,7 +50,6 @@ $section_title = get_field('page_section_title');
         $has_heading = $heading || $subheading;
         ?>
 
-        <div class="text-block text-image-block block block--margin">
             <div class="container">
                 <div class="row justify-content-center align-items-center g-5 <?php echo esc_attr($auxClass); ?>">
 
@@ -105,9 +105,9 @@ $section_title = get_field('page_section_title');
                         </div>
                     <?php endif; ?>
 
-                </div>
             </div>
         </div>
 
     <?php endwhile; ?>
 <?php endif; ?>
+</div>
