@@ -19,7 +19,7 @@ if (!$slides) {
 // Rating toggle
 $show_rating = get_field('hero_show_rating');
 ?>
-
+<section class="<?php echo esc_attr($block['className']); ?>">
 <div id="heroCarousel" class="carousel slide hero-slider" data-bs-ride="carousel">
     <div class="carousel-inner">
 
@@ -76,3 +76,4 @@ $show_rating = get_field('hero_show_rating');
 		</div>
 	<?php endif; ?>
 </div>
+</section>
