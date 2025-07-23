@@ -5828,51 +5828,6 @@ details[open] .accordion-items__item__question::after {
   transition: transform 0.3s ease;
 }
 
-/*HERO*/
-#heroCarousel {
-  position: relative;
-}
-
-.hero-rating {
-  position: absolute;
-  bottom: 0;
-  z-index: 3;
-  left: 2rem;
-  background: white;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.carousel .page-title-block .text-block__heading {
-  max-width: 518px;
-  font-size: clamp(3rem, 2.1429rem + 1.3393vw, 3.75rem);
-}
-
-.carousel .page-title-block:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: white;
-  z-index: 2;
-  opacity: 0.2;
-  box-shadow: inset 0px 0px 99px rgba(255, 255, 255, 0.5176470588);
-}
-
-.carousel .page-title-block {
-  min-height: 600px;
-}
-
-@media (min-width: 768px) {
-  .echo-menu-shortcode .acf-nav-menu .menu li {
-    flex: 0 0 40%;
-    padding: 0 2rem;
-  }
-  .echo-menu-shortcode .acf-nav-menu .menu li {
-    flex: 0 0 40%;
-    padding: 0 2rem;
-  }
-}
 .components-circular-option-picker__option {
   border-radius: 50%;
 }

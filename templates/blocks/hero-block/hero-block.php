@@ -76,13 +76,3 @@ $show_rating = get_field('hero_show_rating');
 		</div>
 	<?php endif; ?>
 </div>
-
-<div class="bg-gray py-3">
-    <div class="container-fluid">
-        <?php
-        if (function_exists('yoast_breadcrumb')) {
-            yoast_breadcrumb('<div id="breadcrumbs" class="text-secondary">', '</div>');
-        }
-        ?>
-    </div>
-</div>
