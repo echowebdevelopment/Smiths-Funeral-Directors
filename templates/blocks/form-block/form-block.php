@@ -22,7 +22,7 @@ $alignment   = get_field('alignment') ?: 'left';
 $align_class = 'text-' . esc_attr($alignment);
 ?>
 
-<section class="cf7-block block block--margin">
+<section class="cf7-block <?php echo esc_attr($block['className']); ?>">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-12 <?php echo esc_attr($align_class); ?>">

@@ -18,7 +18,7 @@ $image_position = get_field( 'quote_image_position' ) === 'left' ? 'order-md-1' 
 $content_order  = ( $image_position === 'order-md-1' ) ? 'order-md-2' : 'order-md-1';
 ?>
 
-<section class="pull-quote-block py-0 bg-primary">
+<section class="pull-quote-block <?php echo esc_attr($block['className']); ?>">
     <?php if ( $image_id ) : ?>
         <!-- With Image: Full-width row using container-fluid -->
             <div class="row w-100 no-gutters align-items-stretch">

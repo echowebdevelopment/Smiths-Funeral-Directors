@@ -17,7 +17,7 @@ $cards               = get_field( 'cards' );
 ?>
 
 <?php if ( $cards ) : ?>
-<section class="card-block py-5">
+<section class="card-block <?php echo esc_attr($block['className']); ?>">
     <div class="container">
         <?php if ( $section_title ) : ?>
             <h2 class="text-center mb-3"><?php echo esc_html( $section_title ); ?></h2>

@@ -8,7 +8,7 @@ $args = array(
 $query = new WP_Query($args);
 
 if ($query->have_posts()): ?>
-    <div class="product-feed block block--margin">
+    <div class="product-feed block <?php echo esc_attr($block['className']); ?>">
         <div class="container">
             <div class="row">
                 <?php while ($query->have_posts()):

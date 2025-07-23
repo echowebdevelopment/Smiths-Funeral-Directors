@@ -22,7 +22,7 @@ $args = [
 $team_query = new WP_Query($args);
 
 if ($team_query->have_posts()): ?>
-<section class="teams-block py-5">
+<section class="teams-block <?php echo esc_attr($block['className']); ?>">
     <div class="container">
 
         <!-- Optional Page Heading -->

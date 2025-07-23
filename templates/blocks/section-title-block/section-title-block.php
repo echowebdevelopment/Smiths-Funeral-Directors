@@ -24,7 +24,7 @@ $align_class = 'text-' . esc_attr($alignment);
 
 // Output
 ?>
-<section class="section-title-block block block--margin">
+<section class="section-title-block <?php echo esc_attr($block['className']); ?>">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8 text-block__header <?php echo $align_class; ?>">
