@@ -1,0 +1,13 @@
+{
+	"name": "acf/hero-block",
+	"title": "Hero Block",
+	"description": "A full-width hero section for displaying a page title, background image, and optional buttons or content.",
+	"category": "widgets",
+	"icon": "slides",
+	"keywords": ["hero", "banner", "header", "page title", "cover"],
+	"acf": {
+		"mode": "editor",
+		"renderTemplate": "hero-block.php"
+	},
+	"align": "full"
+}

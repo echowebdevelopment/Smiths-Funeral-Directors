@@ -20,12 +20,12 @@ $strippedparent = function_exists('clean') ? clean($parent) : sanitize_title($pa
 
 ?>
 
-<div class="position-relative echo-mega-menu padding w-100 bg-primary">
+<div class="position-relative echo-mega-menu padding w-100">
     <div class="container-fluid">
         <div class="row">
             <div class="main-title col-12 col-xl-3">
                 <h3 class="text-secondary"><?php echo esc_html($title); ?></h3>
-                <div class="short-intro d-none d-xl-block text-secondary"><?php echo $desc; ?></div>
+                <div class="short-intro d-none d-xl-block"><?php echo $desc; ?></div>
             </div>
             <div class="col-12 col-xl-9">
                 <div class="row" id="<?php echo esc_attr($strippedparent); ?>">

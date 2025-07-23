@@ -51,7 +51,7 @@ $phone = get_field( 'phone', 'option' );
 			<span>Call us on</span>
 			<a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
 		</div>
-
+			
 		<button
 			class="navbar-toggler"
 			type="button"
@@ -66,13 +66,14 @@ $phone = get_field( 'phone', 'option' );
 
 		<div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="navbarNavOffcanvas">
 
-			<div class="offcanvas-header justify-content-end">
+			<div class="offcanvas-header justify-between">
+				<button class="btn btn-secondary btn-close-mega" type="button" data-bs-dismiss="dropdown" aria-label="Close menu"><i class="icon-chevron_left"></i> Back</button>
 				<button
-					class="btn-close btn-close-white text-reset"
+					class="btn btn-primary text-reset"
 					type="button"
 					data-bs-dismiss="offcanvas"
 					aria-label="<?php esc_attr_e( 'Close menu', 'understrap' ); ?>"
-				></button>
+				>Close</button>
 			</div><!-- .offcancas-header -->
 
 			<!-- The WordPress Menu goes here -->

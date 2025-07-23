@@ -12602,6 +12602,25 @@ details[open] .accordion-items__item__question::after {
   transition: transform 0.3s ease;
 }
 
+/*HERO*/
+#heroCarousel {
+  position: relative;
+}
+
+.hero-rating {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  left: 2rem;
+  background: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.carousel .page-title-block {
+  min-height: 600px;
+}
+
 /*
 * Use existing Bootstrap 4/5 classes and
 * variables to extend - override CF7 style
@@ -13517,23 +13536,15 @@ h3.footer-title, .footer-title.h3 {
 
 @media (max-width: 1199.98px) {
   .echo-mega-menu {
-    padding: 0 2rem;
     height: 100%;
   }
   .echo-mega-menu .acf-nav-menu {
     padding: 1rem;
   }
-  .echo-mega-menu .navbar-nav .nav-link {
-    color: #fff;
-  }
 }
 @media (max-width: 1199.98px) {
   header .navbar-nav .nav-link {
     font-size: clamp(1.25rem, 0.1363rem + 2.3202vw, 1.875rem) !important;
-    color: #fff !important;
-  }
-  header .navbar-nav .nav-link::after {
-    filter: brightness(0) invert(1);
   }
   .offcanvas-body {
     padding: 2rem;
@@ -13568,34 +13579,8 @@ h3.footer-title, .footer-title.h3 {
   text-decoration: none;
 }
 
-.menu-col ul a:hover {
-  text-decoration: underline;
-  color: #FCA933;
-}
-
-.acf-nav-menu ul:not(#menu-about) li {
-  border-bottom: 1px solid rgba(252, 169, 51, 0.5);
-}
-
-.acf-nav-menu ul:not(#menu-about) a {
-  font-size: 14px;
-}
-
 .dropdown-toggle {
   position: relative;
-}
-
-.dropdown-toggle::after {
-  background: url("icons/chevron-down.svg");
-  border: 0;
-  color: red;
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 16px;
-  filter: brightness(0) saturate(100%) invert(75%) sepia(56%) saturate(831%) hue-rotate(331deg) brightness(98%) contrast(101%);
 }
 
 .offcanvas {
@@ -13611,7 +13596,6 @@ h3.footer-title, .footer-title.h3 {
   background: 0 0;
   width: -moz-max-content;
   width: max-content;
-  color: #FCA933 !important;
   text-transform: uppercase;
   font-size: 14px;
   opacity: 1;
@@ -13677,7 +13661,7 @@ h3.footer-title, .footer-title.h3 {
     box-shadow: none;
     border: none !important;
     overflow: hidden;
-    background: white;
+    background: #D7ECF5;
     position: absolute;
     top: 70px;
     opacity: 1;
@@ -13811,6 +13795,15 @@ h3.footer-title, .footer-title.h3 {
   .dropdown-menu .col-menu.two-col-menu .col:nth-of-type(even) .link-items a {
     width: 100%;
   }
+}
+.acf-nav-menu .menu {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+.acf-nav-menu a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=theme.css.map */

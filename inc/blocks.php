@@ -30,7 +30,8 @@ function register_acf_blocks() {
 		'section-title-block',
 		'nap-block',
 		'form-block',
-		'megamenu-block'
+		'megamenu-block',
+		'hero-block'
 	);
 
 	foreach ( $blocks as $block ) {

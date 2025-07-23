@@ -450,3 +450,21 @@ details[open] .accordion-items__item__question::after {
 	transform: rotate(270deg);
 	transition: transform 0.3s ease;
 }
+
+
+/*HERO*/
+#heroCarousel {
+	position: relative;
+}
+.hero-rating {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    left: 2rem;
+    background: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.carousel .page-title-block {
+	min-height: 600px;
+}
