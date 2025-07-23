@@ -12617,6 +12617,22 @@ details[open] .accordion-items__item__question::after {
   border-top-left-radius: 10px;
 }
 
+.carousel .page-title-block .text-block__heading {
+  max-width: 518px;
+  font-size: clamp(3rem, 2.1429rem + 1.3393vw, 3.75rem);
+}
+
+.carousel .page-title-block:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 2;
+  opacity: 0.2;
+  box-shadow: inset 0px 0px 99px rgba(255, 255, 255, 0.5176470588);
+}
+
 .carousel .page-title-block {
   min-height: 600px;
 }
