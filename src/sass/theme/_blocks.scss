@@ -340,6 +340,9 @@ button.slick-next.slick-arrow {
 		img {
 			border-radius: 0 !important;
 			transition: transform 0.3s ease-in-out;
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
 		}
 		.card-img-wrapper {
 			object-fit: cover;

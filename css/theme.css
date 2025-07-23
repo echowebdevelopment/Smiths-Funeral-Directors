@@ -12487,6 +12487,10 @@ button.slick-next.slick-arrow:hover {
 .card-block .card img {
   border-radius: 0 !important;
   transition: transform 0.3s ease-in-out;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .card-block .card .card-img-wrapper {
   -o-object-fit: cover;
