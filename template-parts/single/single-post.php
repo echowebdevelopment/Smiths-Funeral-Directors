@@ -40,14 +40,14 @@
            <?php the_content() ?>
         </div>
         <?php if($post_details["image"]) { ?>
-            <div class="col-6 col-lg-6">
+            <div class="col-6 col-lg-6 align-items-center d-flex justify-content-center">
                 <img src="<?php echo $post_details["image"] ?>">
             </div>
         <?php } ?>
     </div>
-<div class="container text-center footer-btn">
+<div class="container text-center footer-btn mt-5">
     <div class="btn-container">
-        <a href="/news/" class="btn btn-primary">See more articles</a>
+        <a href="/community-news/" class="btn btn-primary">See more articles</a>
     </div>
 </div>
 </div>
