@@ -61,7 +61,7 @@ $show_rating = get_field('hero_show_rating');
 						<img 
 							src="<?php echo esc_url( $image_url ); ?>"
 							class="text-block__img img-fluid"
-							loading="lazy"
+							loading="eager"
 						/>
 					<?php endif; ?>
                 </div>
