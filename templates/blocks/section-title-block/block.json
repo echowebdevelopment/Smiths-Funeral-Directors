@@ -9,5 +9,8 @@
 		"mode": "editor",
 		"renderTemplate": "section-title-block.php"
 	},
-	"align": "full"
+	"align": "full",
+	"supports": {
+		"anchor": true
+	}
 }

@@ -101,7 +101,7 @@ $section_title = get_field('page_section_title');
                     </div>
 
                     <?php if ($has_image) : ?>
-                        <div class="col-12 col-xl-6 order-1 order-xl-0 mt-0">
+                        <div class="col-12 col-xl-6 order-1 order-xl-0 mt-0 text-center">
                             <?php
                             $alt = get_post_meta($acf_image, '_wp_attachment_image_alt', true);
                             if (!$alt) {
