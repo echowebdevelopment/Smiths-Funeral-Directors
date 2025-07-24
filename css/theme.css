@@ -13599,6 +13599,7 @@ ul.pagination:before {
 }
 .echo-block .echo-background.position-center-center {
   top: 50%;
+  transform: translateY(-50%);
   left: 0;
   right: 0;
 }
@@ -13614,10 +13615,12 @@ ul.pagination:before {
 }
 .echo-block .echo-background.position-center-left {
   top: 50%;
+  transform: translateY(-50%);
   left: 0;
 }
 .echo-block .echo-background.position-center-right {
   top: 50%;
+  transform: translateY(-50%);
   right: 0;
 }
 .echo-block .echo-background.position-top-right {

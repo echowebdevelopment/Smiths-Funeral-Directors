@@ -392,6 +392,7 @@ ul.pagination:before {
         }
         &.position-center-center{
             top: 50%;
+            transform: translateY(-50%);
             left: 0;
             right: 0;
         }
@@ -407,10 +408,12 @@ ul.pagination:before {
         }
         &.position-center-left{
             top: 50%;
+            transform: translateY(-50%);
             left: 0;
         }
         &.position-center-right{
             top: 50%;
+            transform: translateY(-50%);
             right: 0;
         }
         &.position-top-right{

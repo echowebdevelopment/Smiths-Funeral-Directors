@@ -13,7 +13,20 @@ defined('ABSPATH') || exit;
 $section_title = get_field('page_section_title');
 ?>
 
-<div class="text-block text-image-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
+<section class="text-block text-image-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
+<?php if (have_rows('background_sections')) : ?>
+            <?php while (have_rows('background_sections')) : the_row(); 
+                $image = get_sub_field('image'); // image array
+                $position = get_sub_field('background_position'); // select string like 'center center'
+
+                if ($image) :
+                    $url = esc_url($image['url']);
+                    $alt = esc_attr($image['alt']);
+                    $position_class = str_replace(' ', '-', strtolower($position)); // e.g. 'center-center'
+            ?>
+                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" class="echo-background position-<?php echo esc_attr($position_class); ?>" />
+            <?php endif; endwhile; ?>
+    <?php endif; ?>
 <?php if ($section_title) : ?>
     <div class="section-title text-center mt-5">
         <h2><?php echo esc_html($section_title); ?></h2>
@@ -110,17 +123,4 @@ $section_title = get_field('page_section_title');
 
     <?php endwhile; ?>
 <?php endif; ?>
-<?php if (have_rows('background_sections')) : ?>
-            <?php while (have_rows('background_sections')) : the_row(); 
-                $image = get_sub_field('image'); // image array
-                $position = get_sub_field('background_position'); // select string like 'center center'
-
-                if ($image) :
-                    $url = esc_url($image['url']);
-                    $alt = esc_attr($image['alt']);
-                    $position_class = str_replace(' ', '-', strtolower($position)); // e.g. 'center-center'
-            ?>
-                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" class="echo-background position-<?php echo esc_attr($position_class); ?>" />
-            <?php endif; endwhile; ?>
-    <?php endif; ?>
-</div>
+</section>
