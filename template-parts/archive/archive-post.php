@@ -13,7 +13,7 @@ get_template_part( 'templates/blocks/page-title-block/page-title', 'block', [
 
     // Optional: Modify the query if needed (only if using a custom post type)
     $args = [
-        'post_type'      => 'news', // Change to your post type slug, or 'post'
+        'post_type'      => 'post', // Change to your post type slug, or 'post'
         'posts_per_page' => 6,
         'paged'          => $paged,
     ];
