@@ -118,9 +118,10 @@ add_filter('acf/settings/load_json', function($paths) {
 });
 
 
-function custom_archive_posts_per_page( $query ) {
-    if ( !is_admin() && $query->is_main_query() && ( is_archive() || is_post_type_archive('post') ) ) {
-        $query->set( 'posts_per_page', 6 );
+add_action('pre_get_posts', function ($query) {
+    if ($query->is_main_query() && !is_admin()) {
+        // some condition...
+        $query->set('posts_per_page', 6); // fine
+        $query->set('paged', get_query_var('paged')); // THIS is usually unnecessary here
     }
-}
-add_action( 'pre_get_posts', 'custom_archive_posts_per_page' );
+});
