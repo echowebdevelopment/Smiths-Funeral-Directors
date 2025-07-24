@@ -19,7 +19,7 @@ $image_position = get_field( 'image_position' ) === 'left' ? 'order-md-1' : 'ord
 $content_order  = ( $image_position === 'order-md-1' ) ? 'order-md-2' : 'order-md-1';
 ?>
 
-<section class="advert-feature-block <?php echo esc_attr($block['className']); ?>">
+<section class="advert-feature-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
     <?php if ( $image_id ) : ?>
         <!-- With Image: Full-width row using container-fluid -->
          

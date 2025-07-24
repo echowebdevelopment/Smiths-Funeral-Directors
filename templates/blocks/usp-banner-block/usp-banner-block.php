@@ -12,7 +12,7 @@
 defined( 'ABSPATH' ) || exit;
 
 if ( have_rows( 'usp_items' ) ) : ?>
-	<section class="usp-banner <?php echo esc_attr($block['className']); ?>">
+	<section class="usp-banner echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
 		<div class="container">
 			<div class="usp-slider text-center">
 				<?php while ( have_rows( 'usp_items' ) ) : the_row();

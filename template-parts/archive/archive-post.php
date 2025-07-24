@@ -59,12 +59,11 @@ get_template_part( 'templates/blocks/page-title-block/page-title', 'block', [
         <div class="mt-5">
             <?php
             $pagination = paginate_links([
-                'type'      => 'array',
-                'mid_size'  => 2,
-                'prev_text' => __('« Previous', 'textdomain'),
-                'next_text' => __('Next »', 'textdomain'),
-                'current'   => $paged,
-                'total'     => $news_query->max_num_pages
+                'type'        => 'array',
+                'mid_size'    => 2,
+                'current'     => $paged,
+                'total'       => $news_query->max_num_pages,
+                'prev_next'   => false, // disables "Previous" and "Next"
             ]);
 
             if ($pagination) :
@@ -80,6 +79,8 @@ get_template_part( 'templates/blocks/page-title-block/page-title', 'block', [
                 </nav>
             <?php endif; ?>
         </div>
+
+
 
         <?php wp_reset_postdata(); ?>
 

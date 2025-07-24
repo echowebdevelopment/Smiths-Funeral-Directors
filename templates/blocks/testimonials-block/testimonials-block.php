@@ -22,7 +22,7 @@ $testimonials = new WP_Query([
 ]);
 ?>
 
-<section class="testimonial-slider-section <?php echo esc_attr($block['className']); ?>">
+<section class="testimonial-slider-section echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
     <div class="container py-5">
         <?php if ( $section_title ) : ?>
             <div class="text-center">

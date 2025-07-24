@@ -17,7 +17,7 @@ $table_rows          = get_field( 'table_rows' );
 ?>
 
 <?php if ( $table_rows ) : ?>
-<section class="table-block <?php echo esc_attr($block['className']); ?>">
+<section class="table-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
     <div class="container">
         <?php if ( $section_title ) : ?>
             <h2 class="text-center mb-3"><?php echo esc_html( $section_title ); ?></h2>

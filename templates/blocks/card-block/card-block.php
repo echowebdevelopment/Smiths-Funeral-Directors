@@ -14,10 +14,13 @@ defined( 'ABSPATH' ) || exit;
 $section_title       = get_field( 'section_title' );
 $section_description = get_field( 'section_description' );
 $cards               = get_field( 'cards' );
+$cta_title           = get_field( 'cta_title' );
+$cta_blurb           = get_field( 'cta_blurb' );
+$buttons             = get_field( 'buttons' );
 ?>
 
 <?php if ( $cards ) : ?>
-<section class="card-block <?php echo esc_attr($block['className']); ?>">
+<section class="card-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
     <div class="container">
         <?php if ( $section_title ) : ?>
             <h2 class="text-center mb-3"><?php echo esc_html( $section_title ); ?></h2>
@@ -61,7 +64,45 @@ $cards               = get_field( 'cards' );
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>
+            <?php if ( $cta_title  ) : ?>
+                <h3 class="text-center mt-5 mb-3"><?php echo esc_html( $cta_title  ); ?></h3>
+            <?php endif; ?>
+
+            <?php if ( $cta_blurb ) : ?>
+                <div class="text-center mb-3">
+                    <?php echo wp_kses_post( $cta_blurb ); ?>
+                </div>
+            <?php endif; ?>
+            <?php if (have_rows('buttons')) : ?>
+                <div class="block-buttons text-center">
+                    <?php while (have_rows('buttons')) : the_row();
+                    $link  = get_sub_field('link');
+                    if (empty($link)) continue;
+                        echo sprintf(
+                            '<a class="btn btn-primary" href="%1$s" target="%2$s">%3$s</a>',
+                            esc_url($link['url']),
+                            esc_attr($link['target']),
+                            esc_html($link['title'])
+                        );
+                    endwhile; ?>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
+    <?php if (have_rows('background_sections')) : ?>
+            <?php while (have_rows('background_sections')) : the_row(); 
+                $image = get_sub_field('image'); // image array
+                $position = get_sub_field('background_position'); // select string like 'center center'
+
+                if ($image) :
+                    $url = esc_url($image['url']);
+                    $alt = esc_attr($image['alt']);
+                    $position_class = str_replace(' ', '-', strtolower($position)); // e.g. 'center-center'
+            ?>
+                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" class="echo-background position-<?php echo esc_attr($position_class); ?>" />
+            <?php endif; endwhile; ?>
+    <?php endif; ?>
+
+
 </section>
 <?php endif; ?>

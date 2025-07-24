@@ -13,7 +13,7 @@ defined('ABSPATH') || exit;
 $section_title = get_field('page_section_title');
 ?>
 
-<div class="text-block text-image-block <?php echo esc_attr($block['className']); ?>">
+<div class="text-block text-image-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
 <?php if ($section_title) : ?>
     <div class="section-title text-center mt-5">
         <h2><?php echo esc_html($section_title); ?></h2>

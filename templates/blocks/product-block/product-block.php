@@ -8,7 +8,7 @@ $args = array(
 $query = new WP_Query($args);
 
 if ($query->have_posts()): ?>
-    <div class="product-feed block <?php echo esc_attr($block['className']); ?>">
+    <section class="product-feed echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
         <div class="container">
             <div class="row">
                 <?php while ($query->have_posts()):
@@ -31,6 +31,6 @@ if ($query->have_posts()): ?>
                 <?php endwhile; ?>
             </div>
         </div>
-    </div>
+    </section>
     <?php wp_reset_postdata(); ?>
 <?php endif; ?>

@@ -31,7 +31,7 @@ $address = get_field( 'address', 'option' );
 $directions = get_field( 'directions', 'option' );
 ?>
 
-<section class="nap-map-block <?php echo esc_attr($block['className']); ?>">
+<section class="nap-map-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
 		<div class="row g-5 align-items-start">
 			<div class="col-12 <?php echo $has_map ? 'col-lg-3 col-md-4 col-sm-5' : 'col-lg-12'; ?> p-5 <?php echo $align_class; ?>">
                     
