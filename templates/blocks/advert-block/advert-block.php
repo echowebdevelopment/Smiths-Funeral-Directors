@@ -20,6 +20,7 @@ $content_order  = ( $image_position === 'order-md-1' ) ? 'order-md-2' : 'order-m
 ?>
 
 <section class="advert-feature-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
+    <div class="py-5">
     <?php if ( $image_id ) : ?>
         <!-- With Image: Full-width row using container-fluid -->
          
@@ -105,4 +106,5 @@ $content_order  = ( $image_position === 'order-md-1' ) ? 'order-md-2' : 'order-m
                 </div>
             </div>
     <?php endif; ?>
+    </div>
 </section>

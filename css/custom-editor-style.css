@@ -5562,7 +5562,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 
 .pull-quote-block {
-  min-height: 300px;
   display: flex;
   align-items: center;
 }

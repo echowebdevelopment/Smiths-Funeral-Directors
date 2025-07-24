@@ -29,6 +29,7 @@ if ($heading_center == 'yes') {
 $link = get_field('link_all_faqs');
 ?>
 <section class="accordion-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
+    <div class="py-5">
 <?php if (have_rows('questions')): ?>
 		<div class="container">
 			<div class="row justify-content-center">
@@ -97,4 +98,5 @@ $link = get_field('link_all_faqs');
 							</script>
 		<?php endif; ?>
 <?php endif; ?>
+						</div>
 </section>
