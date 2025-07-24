@@ -2,7 +2,7 @@
 
 <?php 
 get_template_part( 'templates/blocks/page-title-block/page-title', 'block', [ 
-    'title' => get_post_type_archive_title(), // You can change this or use get_post_type_archive_title()
+    'title' => 'Latest News', // You can change this or use get_post_type_archive_title()
 ] );
 ?>
 
