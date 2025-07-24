@@ -28,7 +28,7 @@ $section_title = get_field('page_section_title');
             <?php endif; endwhile; ?>
     <?php endif; ?>
 <?php if ($section_title) : ?>
-    <div class="section-title text-center mt-5">
+    <div class="section-title text-center">
         <h2><?php echo esc_html($section_title); ?></h2>
     </div>
 <?php endif; ?>
