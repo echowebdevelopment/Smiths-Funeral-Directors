@@ -12233,6 +12233,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   color: #fff;
   max-width: -moz-max-content;
   max-width: max-content;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .page-title-block .text-block__header h1, .page-title-block .text-block__header .h1 {
   font-weight: 300 !important;

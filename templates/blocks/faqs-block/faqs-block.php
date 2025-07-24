@@ -99,4 +99,17 @@ $link = get_field('link_all_faqs');
 		<?php endif; ?>
 <?php endif; ?>
 						</div>
+<?php if (have_rows('background_sections')) : ?>
+            <?php while (have_rows('background_sections')) : the_row(); 
+                $image = get_sub_field('image'); // image array
+                $position = get_sub_field('background_position'); // select string like 'center center'
+
+                if ($image) :
+                    $url = esc_url($image['url']);
+                    $alt = esc_attr($image['alt']);
+                    $position_class = str_replace(' ', '-', strtolower($position)); // e.g. 'center-center'
+            ?>
+                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" class="echo-background position-<?php echo esc_attr($position_class); ?>" />
+            <?php endif; endwhile; ?>
+    <?php endif; ?>
 </section>
