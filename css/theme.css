@@ -13673,6 +13673,17 @@ ul.pagination:before {
   background-position: right;
 }
 
+@media (max-width: 767.98px) {
+  .block-buttons {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    gap: 10px;
+  }
+  .block-buttons .btn, .block-buttons .wpcf7 input[type=submit], .wpcf7 .block-buttons input[type=submit], .block-buttons .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .block-buttons a.button, .block-buttons .woocommerce-info a.button, .woocommerce-info .block-buttons a.button {
+    margin: 0;
+  }
+}
 h3.footer-title, .footer-title.h3 {
   font-size: clamp(1.125rem, 0.6964rem + 0.6696vw, 1.5rem);
   font-weight: normal;

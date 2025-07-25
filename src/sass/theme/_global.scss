@@ -463,3 +463,14 @@ ul.pagination:before {
     right: 0;
     background-position: right;
 }
+@include media-breakpoint-down(md) {
+    .block-buttons {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        gap: 10px;
+        .btn {
+            margin: 0;
+        }
+    }
+}
