@@ -435,3 +435,29 @@ ul.pagination:before {
         }
     }
 }
+.ornament-left:before{
+    background: url('../img/ornament-left.png');
+    content: '';
+    width: 15%;
+    height: 300px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -150px;
+    z-index: 2;
+}
+.ornament-right:before{
+    background: url('../img/ornament-right.png');
+    content: '';
+    width: 15%;
+    height: 300px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -150px;
+    z-index: 2;
+    right: 0;
+    background-position: right;
+}

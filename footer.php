@@ -23,9 +23,7 @@ $linkedin = get_field( 'linkedin', 'option' );
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
-<div id="footer-image">
-<img src="<?php echo esc_url( get_template_directory_uri() . '/img/footer-bg.jpg' ); ?>" alt="immaculate Limousines">
-</div>
+
 <div id="main-footer">
 		<div class="row">
 			<div class="col-lg-3 bg-white p-5" id="footer-branding">
