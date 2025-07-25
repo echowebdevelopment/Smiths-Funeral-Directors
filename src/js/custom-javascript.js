@@ -125,14 +125,3 @@ class Accordion {
 document.querySelectorAll("details").forEach((el) => {
 	new Accordion(el);
 });
-
-
-jQuery(function($) {
-  $(".echo-dropdown-toggle").click(function() {
-    $('.btn-close-mega').addClass("show");
-  });
-
-  $(".btn-close-mega").click(function() {
-    $('.btn-close-mega').removeClass("show");
-  });
-});

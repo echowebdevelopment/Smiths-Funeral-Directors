@@ -13339,16 +13339,20 @@ ol li::before {
 
 .product-card__image {
   overflow: hidden;
+  height: 250px;
+  background: white;
+  align-items: center;
 }
 
 .product-card__image img {
   transition: transform 0.4s ease;
   display: block;
   width: 100%;
-  height: auto;
-  min-height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
 }
 
 .product-card__image:hover img {
@@ -13519,7 +13523,7 @@ body .cky-consent-container {
 
 .cky-consent-bar:before {
   content: "";
-  background: url(https://wordpress-314780-5692930.cloudwaysapps.com/wp-content/uploads/2025/07/smiths-logo.png);
+  background: url(../wp-content/uploads/2025/07/smiths-logo.png);
   width: 194px;
   height: 100px;
   display: block;

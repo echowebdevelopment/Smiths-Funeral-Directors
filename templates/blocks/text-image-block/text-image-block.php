@@ -27,6 +27,7 @@ $section_title = get_field('page_section_title');
                     <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" class="echo-background position-<?php echo esc_attr($position_class); ?>" />
             <?php endif; endwhile; ?>
     <?php endif; ?>
+    <div class="py-5">
 <?php if ($section_title) : ?>
     <div class="section-title text-center">
         <h2><?php echo esc_html($section_title); ?></h2>
@@ -123,4 +124,5 @@ $section_title = get_field('page_section_title');
 
     <?php endwhile; ?>
 <?php endif; ?>
+</div>
 </section>
