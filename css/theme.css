@@ -13504,8 +13504,6 @@ textarea {
   }
 }
 .text-image-block .container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   border-bottom: 1px solid #06163E;
 }
 .text-image-block .container:last-child {
