@@ -13185,6 +13185,7 @@ hr {
   font-weight: 500;
   padding: 0.75rem 1.5rem;
   line-height: normal;
+  background-color: #FAF6F0;
 }
 .btn.btn-primary, .wpcf7 input.btn-primary[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.btn-primary.button, .woocommerce-info a.btn-primary.button {
   background: #FAF6F0;
@@ -13589,6 +13590,8 @@ ul.pagination:before {
 /*Background Image*/
 .echo-block {
   position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .echo-block .container {
   z-index: 2;
@@ -13652,6 +13655,7 @@ ul.pagination:before {
   position: absolute;
   bottom: -150px;
   z-index: 2;
+  left: 0;
 }
 
 .ornament-right:before {

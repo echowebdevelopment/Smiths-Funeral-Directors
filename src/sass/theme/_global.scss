@@ -9,6 +9,7 @@ hr {
     font-weight: 500;
     padding: .75rem 1.5rem;
     line-height: normal;
+    background-color: #FAF6F0;
     &.btn-primary {
         background: #FAF6F0;
     }
@@ -382,6 +383,8 @@ ul.pagination:before {
 /*Background Image*/
 .echo-block{
     position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
     .container {
         z-index: 2;
         position: relative;
@@ -444,6 +447,7 @@ ul.pagination:before {
     position: absolute;
     bottom: -150px;
     z-index: 2;
+    left: 0;
 }
 .ornament-right:before{
     background: url('../img/ornament-right.png');

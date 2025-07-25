@@ -64,7 +64,7 @@ $section_title = get_field('page_section_title');
         $has_heading = $heading || $subheading;
         ?>
 
-            <div class="container">
+            <div class="container py-3 py-md-5">
                 <div class="row justify-content-center align-items-center gx-5 <?php echo esc_attr($auxClass); ?>">
 
                     <div class="col-12 <?php echo $has_image ? 'col-xl-6 order-2 order-xl-0' : 'col-xl-12'; ?>">
