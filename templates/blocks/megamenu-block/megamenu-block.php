@@ -21,7 +21,7 @@ $strippedparent = function_exists('clean') ? clean($parent) : sanitize_title($pa
 ?>
 
 <div class="position-relative echo-mega-menu padding w-100">
-    <div class="container-fluid">
+    <div class="container-fluid py-3">
         <div class="row">
             <div class="main-title col-12 col-xl-3">
                 <h3 class="text-secondary"><?php echo esc_html($title); ?></h3>
