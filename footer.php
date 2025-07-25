@@ -135,7 +135,7 @@ $linkedin = get_field( 'linkedin', 'option' );
 						<img src="<?php echo esc_url( get_template_directory_uri() . '/img/golden-charter-logo.png' ); ?>" alt="Golden Charter Logo" class="golden-charter-logo">
 					</div>
 					<div class="col-md-2 col-6 text-center">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/img/saif.png' ); ?>" alt="SAIF Logo">
+						<img src="/wp-content/uploads/2025/07/SAIF.svg" alt="SAIF Logo">
 					</div>
 					<div class="col-md-8 col-sm-12">
 						Peterborough Funeral Services Ltd trading as Smiths Funeral Directors, is an appointed representative of Golden Charter Limited trading as Golden Charter Funeral Plans which is authorised and regulated by the Financial Conduct Authority (FRN:965279).
