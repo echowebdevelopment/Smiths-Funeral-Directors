@@ -10,13 +10,14 @@ hr {
     padding: .75rem 1.5rem;
     line-height: normal;
     background-color: #FAF6F0;
+    color: #06163E;
     &.btn-primary {
         background: #FAF6F0;
     }
     &:hover {
         background-color: #6889A3;
         color: #fff;
-        border: 1px solid $tertiary;
+        border: 1px solid #6889A3;
     }
 }
 
@@ -268,6 +269,9 @@ textarea {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+.carousel .page-title-block .text-block__header .btn {
+    padding: 1rem 2.5rem;
+}
 .carousel .page-title-block .text-block__heading {
     max-width: 518px;
 	font-size: clamp(3rem, 2.1429rem + 1.3393vw, 3.75rem);
@@ -318,7 +322,7 @@ body .cky-consent-container {
 }
 .cky-consent-bar:before {
     content: '';
-    background: url(../wp-content/uploads/2025/07/smiths-logo.png);
+    background: url(/wp-content/uploads/2025/07/smiths-logo.png);
     width: 194px;
     height: 100px;
     display: block;

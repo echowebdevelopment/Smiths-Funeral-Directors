@@ -91,15 +91,15 @@ body.understrap-no-sidebar {
 		position: relative;	
 		background: linear-gradient(
 		90deg,
-		rgba(218, 237, 255, 0.4) 0%,
-		rgba(218, 237, 255, 0.4) 41%,
+		rgba(218, 237, 255, 0.7) 0%,
+		rgba(218, 237, 255, 0.7) 41%,
 		rgba(218, 237, 255, 0) 100%
 		) no-repeat padding-box;
 		width: 100%;
     	padding: 2rem;
 		color: $white;
 		max-width: max-content;
-    	text-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    	text-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
 		h1 {
 			font-weight: 300 !important;
 		}
@@ -189,6 +189,7 @@ body.understrap-no-sidebar {
 	font-size: clamp(1rem, 0.8571rem + 0.2232vw, 1.125rem);
 	font-weight: 500;
 	text-transform: capitalize;
+	color: #06163E;
 }
 .pull-quote-block {
     display: flex;
@@ -383,6 +384,10 @@ button.slick-next.slick-arrow {
 	a {
 		text-decoration: none;
 		color: $secondary;
+	}
+
+	.text-blurb-container {
+		max-width: 1000px;
 	}
 }
 

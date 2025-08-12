@@ -494,9 +494,9 @@ progress {
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #D7ECF5;
-  --bs-link-hover-color: #acbdc4;
+  --bs-link-hover-color: rgb(172, 188.8, 196);
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
+  --bs-highlight-bg: rgb(255, 242.6, 205.4);
 }
 
 .table, .wp-block-table table {
@@ -577,13 +577,13 @@ progress {
 
 .table-primary {
   --bs-table-color: #000;
-  --bs-table-bg: #f7fbfd;
-  --bs-table-border-color: #dee2e4;
-  --bs-table-striped-bg: #ebeef0;
+  --bs-table-bg: rgb(247, 251.2, 253);
+  --bs-table-border-color: rgb(222.3, 226.08, 227.7);
+  --bs-table-striped-bg: rgb(234.65, 238.64, 240.35);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #dee2e4;
+  --bs-table-active-bg: rgb(222.3, 226.08, 227.7);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e4e8ea;
+  --bs-table-hover-bg: rgb(228.475, 232.36, 234.025);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -591,13 +591,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: #cdd0d8;
-  --bs-table-border-color: #b9bbc2;
-  --bs-table-striped-bg: #c3c6cd;
+  --bs-table-bg: rgb(205.2, 208.4, 216.4);
+  --bs-table-border-color: rgb(184.68, 187.56, 194.76);
+  --bs-table-striped-bg: rgb(194.94, 197.98, 205.58);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #b9bbc2;
+  --bs-table-active-bg: rgb(184.68, 187.56, 194.76);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bec0c8;
+  --bs-table-hover-bg: rgb(189.81, 192.77, 200.17);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -605,13 +605,13 @@ progress {
 
 .table-success {
   --bs-table-color: #000;
-  --bs-table-bg: #d1e7dd;
-  --bs-table-border-color: #bcd0c7;
-  --bs-table-striped-bg: #c7dbd2;
+  --bs-table-bg: rgb(209, 231, 220.8);
+  --bs-table-border-color: rgb(188.1, 207.9, 198.72);
+  --bs-table-striped-bg: rgb(198.55, 219.45, 209.76);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #bcd0c7;
+  --bs-table-active-bg: rgb(188.1, 207.9, 198.72);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #c1d6cc;
+  --bs-table-hover-bg: rgb(193.325, 213.675, 204.24);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -619,13 +619,13 @@ progress {
 
 .table-info {
   --bs-table-color: #000;
-  --bs-table-bg: #cff4fc;
-  --bs-table-border-color: #badce3;
-  --bs-table-striped-bg: #c5e8ef;
+  --bs-table-bg: rgb(206.6, 244.4, 252);
+  --bs-table-border-color: rgb(185.94, 219.96, 226.8);
+  --bs-table-striped-bg: rgb(196.27, 232.18, 239.4);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #badce3;
+  --bs-table-active-bg: rgb(185.94, 219.96, 226.8);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bfe2e9;
+  --bs-table-hover-bg: rgb(191.105, 226.07, 233.1);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -633,13 +633,13 @@ progress {
 
 .table-warning {
   --bs-table-color: #000;
-  --bs-table-bg: #fff3cd;
-  --bs-table-border-color: #e6dbb9;
-  --bs-table-striped-bg: #f2e7c3;
+  --bs-table-bg: rgb(255, 242.6, 205.4);
+  --bs-table-border-color: rgb(229.5, 218.34, 184.86);
+  --bs-table-striped-bg: rgb(242.25, 230.47, 195.13);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e6dbb9;
+  --bs-table-active-bg: rgb(229.5, 218.34, 184.86);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ece1be;
+  --bs-table-hover-bg: rgb(235.875, 224.405, 189.995);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -647,13 +647,13 @@ progress {
 
 .table-danger {
   --bs-table-color: #000;
-  --bs-table-bg: #f8d7da;
-  --bs-table-border-color: #dfc2c4;
-  --bs-table-striped-bg: #eccccf;
+  --bs-table-bg: rgb(248, 214.6, 217.8);
+  --bs-table-border-color: rgb(223.2, 193.14, 196.02);
+  --bs-table-striped-bg: rgb(235.6, 203.87, 206.91);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #dfc2c4;
+  --bs-table-active-bg: rgb(223.2, 193.14, 196.02);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e5c7ca;
+  --bs-table-hover-bg: rgb(229.4, 198.505, 201.465);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -662,12 +662,12 @@ progress {
 .table-light {
   --bs-table-color: #000;
   --bs-table-bg: #f8f9fa;
-  --bs-table-border-color: #dfe0e1;
-  --bs-table-striped-bg: #ecedee;
+  --bs-table-border-color: rgb(223.2, 224.1, 225);
+  --bs-table-striped-bg: rgb(235.6, 236.55, 237.5);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #dfe0e1;
+  --bs-table-active-bg: rgb(223.2, 224.1, 225);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e5e6e7;
+  --bs-table-hover-bg: rgb(229.4, 230.325, 231.25);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -676,12 +676,12 @@ progress {
 .table-dark {
   --bs-table-color: #fff;
   --bs-table-bg: #212529;
-  --bs-table-border-color: #373b3e;
-  --bs-table-striped-bg: #2c3034;
+  --bs-table-border-color: rgb(55.2, 58.8, 62.4);
+  --bs-table-striped-bg: rgb(44.1, 47.9, 51.7);
   --bs-table-striped-color: #fff;
-  --bs-table-active-bg: #373b3e;
+  --bs-table-active-bg: rgb(55.2, 58.8, 62.4);
   --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #323539;
+  --bs-table-hover-bg: rgb(49.65, 53.35, 57.05);
   --bs-table-hover-color: #fff;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -920,56 +920,56 @@ progress {
   color: #D7ECF5 !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #dff0f7 !important;
+  color: rgb(223, 239.8, 247) !important;
 }
 
 .link-secondary {
   color: #06163E !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #051232 !important;
+  color: rgb(4.8, 17.6, 49.6) !important;
 }
 
 .link-success {
   color: #198754 !important;
 }
 .link-success:hover, .link-success:focus {
-  color: #146c43 !important;
+  color: rgb(20, 108, 67.2) !important;
 }
 
 .link-info {
   color: #0dcaf0 !important;
 }
 .link-info:hover, .link-info:focus {
-  color: #3dd5f3 !important;
+  color: rgb(61.4, 212.6, 243) !important;
 }
 
 .link-warning {
   color: #ffc107 !important;
 }
 .link-warning:hover, .link-warning:focus {
-  color: #ffcd39 !important;
+  color: rgb(255, 205.4, 56.6) !important;
 }
 
 .link-danger {
   color: #dc3545 !important;
 }
 .link-danger:hover, .link-danger:focus {
-  color: #b02a37 !important;
+  color: rgb(176, 42.4, 55.2) !important;
 }
 
 .link-light {
   color: #f8f9fa !important;
 }
 .link-light:hover, .link-light:focus {
-  color: #f9fafb !important;
+  color: rgb(249.4, 250.2, 251) !important;
 }
 
 .link-dark {
   color: #212529 !important;
 }
 .link-dark:hover, .link-dark:focus {
-  color: #1a1e21 !important;
+  color: rgb(26.4, 29.6, 32.8) !important;
 }
 
 .ratio {
@@ -5453,13 +5453,13 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .page-title-block .text-block__header {
   z-index: 2;
   position: relative;
-  background: linear-gradient(90deg, rgba(218, 237, 255, 0.4) 0%, rgba(218, 237, 255, 0.4) 41%, rgba(218, 237, 255, 0) 100%) no-repeat padding-box;
+  background: linear-gradient(90deg, rgba(218, 237, 255, 0.7) 0%, rgba(218, 237, 255, 0.7) 41%, rgba(218, 237, 255, 0) 100%) no-repeat padding-box;
   width: 100%;
   padding: 2rem;
   color: #fff;
   max-width: -moz-max-content;
   max-width: max-content;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 .page-title-block .text-block__header h1, .page-title-block .text-block__header .h1 {
   font-weight: 300 !important;
@@ -5560,6 +5560,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   font-size: clamp(1rem, 0.8571rem + 0.2232vw, 1.125rem);
   font-weight: 500;
   text-transform: capitalize;
+  color: #06163E;
 }
 
 .pull-quote-block {
@@ -5755,6 +5756,9 @@ button.slick-next.slick-arrow:hover {
 .card-block a {
   text-decoration: none;
   color: #06163E;
+}
+.card-block .text-blurb-container {
+  max-width: 1000px;
 }
 
 /* Table Block */

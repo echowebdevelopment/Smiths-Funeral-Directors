@@ -126,14 +126,42 @@ document.querySelectorAll("details").forEach((el) => {
 	new Accordion(el);
 });
 
-
-
-
 jQuery(document).ready(function($) {
     $(".echo-dropdown-toggle").click(function(){
 		$('.btn-close-mega').addClass("show");
 	});
 	$(".btn-close-mega").click(function(){
 		$('.btn-close-mega').removeClass("show");
+	});
+});
+
+jQuery(function ($) {
+	function setEqualCardBodyHeight() {
+		var maxHeight = 0;
+
+		// Reset first so recalculations work on resize
+		$('.card-body').css('height', 'auto');
+
+		// Find max height
+		$('.card-body').each(function () {
+			var thisHeight = $(this).outerHeight();
+
+			if (thisHeight > maxHeight) {
+				maxHeight = thisHeight;
+			}
+		});
+
+		// Apply max height to all
+		$('.card-body').height(maxHeight);
+	}
+
+	// Run on load
+	$(window).on('load', function () {
+		setEqualCardBodyHeight();
+	});
+
+	// Run on resize
+	$(window).on('resize', function () {
+		setEqualCardBodyHeight();
 	});
 });

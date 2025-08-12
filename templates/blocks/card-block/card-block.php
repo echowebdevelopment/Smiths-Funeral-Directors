@@ -70,7 +70,7 @@ $buttons             = get_field( 'buttons' );
             <?php endif; ?>
 
             <?php if ( $cta_blurb ) : ?>
-                <div class="text-center mb-3">
+                <div class="text-blurb-container text-center mb-3">
                     <?php echo wp_kses_post( $cta_blurb ); ?>
                 </div>
             <?php endif; ?>

@@ -11,7 +11,7 @@ h3.footer-title {
         li {
             margin-bottom: .5rem;
             a {
-                color: $secondary;
+                color: #363A41;
                 text-decoration: none;
                 &:hover {
                     color: $tertiary;
@@ -23,8 +23,14 @@ h3.footer-title {
         }
     }
 }
+#main-footer .company-name {
+    color: #363A41;
+}
+#main-footer .address * {
+    color: #363A41;
+}
 .directions a {
-    color: $secondary;
+    color: #363A41;
     &:hover {
         color: $tertiary;
     }
