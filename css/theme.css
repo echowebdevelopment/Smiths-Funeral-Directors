@@ -12648,7 +12648,7 @@ details[open] .accordion-items__item__question::after {
 }
 
 /* css override */
-@media (min-width: 480px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .col-xs-6 {
     flex: 0 0 auto;
     width: 50%;
