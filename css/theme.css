@@ -12260,8 +12260,8 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   z-index: 1;
   height: 100%;
   width: 100%;
-  -o-object-position: 82% 0%;
-  object-position: 82% 0%;
+  -o-object-position: 82% 50%;
+  object-position: 82% 50%;
 }
 
 #breadcrumbs {
