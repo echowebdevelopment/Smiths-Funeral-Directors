@@ -20,7 +20,7 @@ $heading_tag     = get_field('heading_tag') ?: 'h2';
 $subheading_tag  = get_field('subheading_tag') ?: 'h4';
 
 // Class for text alignment
-$align_class = 'text-' . esc_attr($alignment);
+$align_class = 'text-left text-sm-' . esc_attr($alignment);
 
 // Output
 ?>

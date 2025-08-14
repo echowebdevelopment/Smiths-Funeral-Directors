@@ -82,37 +82,52 @@ body.understrap-no-sidebar {
 
 /*Page Title Block*/
 .page-title-block {
-    min-height: 450px;
     position: relative;
     display: flex;
-    align-items: center;
-	.text-block__header {
+    align-items: start;
+	min-height: 250px;
+
+	@media screen and (min-width:576px) {
+		min-height: 450px;
+	}
+
+	.text-block__header,
+	& + .text-block__header {
 		z-index: 2;
 		position: relative;	
 		background: linear-gradient(
 		90deg,
-		rgba(218, 237, 255, 0.4) 0%,
-		rgba(218, 237, 255, 0.4) 41%,
+		rgba(218, 237, 255, 0.7) 0%,
+		rgba(218, 237, 255, 0.7) 41%,
 		rgba(218, 237, 255, 0) 100%
 		) no-repeat padding-box;
 		width: 100%;
     	padding: 2rem;
 		color: $white;
 		max-width: max-content;
-    	text-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    	text-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
 		h1 {
 			font-weight: 300 !important;
 		}
+	}
+
+	& + .text-block__header {
+		max-width: none;
+		color: inherit;
+		text-shadow: none;
+		padding: 2rem 1rem;
+		background-color: $primary;
 	}
 }
 .page-title-block img.text-block__img {
     object-fit: cover;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 	z-index: 1;
     height: 100%;
     width: 100%;
+	object-position: 82% 0%;
 }
 #breadcrumbs {
 	font-size: 14px;
@@ -149,6 +164,12 @@ body.understrap-no-sidebar {
 	justify-content: center;
 	align-items: center;
 	height: 120px; /* fixed height container if needed */
+}
+
+.usp-title {
+	color: $secondary;
+	font-size: clamp(1.5rem, 0.7857rem + 1.1161vw, 1.9rem);
+	font-weight: 300;
 }
 
 /* Image Divider Block */
@@ -189,6 +210,7 @@ body.understrap-no-sidebar {
 	font-size: clamp(1rem, 0.8571rem + 0.2232vw, 1.125rem);
 	font-weight: 500;
 	text-transform: capitalize;
+	color: #06163E;
 }
 .pull-quote-block {
     display: flex;
@@ -253,6 +275,10 @@ button.slick-next.slick-arrow {
 	&:hover {
 		background-color: $tertiary !important;
 		color: $white !important;
+	}
+
+	@media screen and (max-width:576px) {
+		display: none !important;
 	}
 }
 .testimonial-slider {
@@ -332,6 +358,17 @@ button.slick-next.slick-arrow {
 			justify-content: end;
 		}
 	}
+
+	@include media-breakpoint-down(sm) {
+		.slick-slide {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.testimonial-slider-section h2.section-title {
+	padding: 0 30px;
 }
 
 /* Card Block */
@@ -383,6 +420,10 @@ button.slick-next.slick-arrow {
 	a {
 		text-decoration: none;
 		color: $secondary;
+	}
+
+	.text-blurb-container {
+		max-width: 1000px;
 	}
 }
 
@@ -456,3 +497,10 @@ details[open] .accordion-items__item__question::after {
 }
 
 
+/* css override */
+@media (min-width: 480px) {
+    .col-xs-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}

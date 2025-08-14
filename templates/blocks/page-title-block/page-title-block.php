@@ -77,3 +77,24 @@ $auxaMargin = 'mb-0';
 		?>
 	</div>
 </div>
+
+<script>
+	jQuery(function($) {
+		function moveHeader() {
+			var $header = $('.text-block__header.mb-0'); // Target regardless of position
+
+			if ($(window).width() < 576) {
+				if ($header.parent().is('.page-title-block')) {
+					$header.insertAfter('.page-title-block');
+				}
+			} else {
+				if (!$header.parent().is('.page-title-block')) {
+					$header.prependTo('.page-title-block');
+				}
+			}
+		}
+
+		moveHeader(); // Run on page load
+		$(window).on('resize', moveHeader); // Run on resize
+	});
+</script>

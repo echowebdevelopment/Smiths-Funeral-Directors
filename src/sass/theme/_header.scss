@@ -18,6 +18,7 @@
     font-size: clamp(1rem, 0.8571rem + 0.2232vw, 1.125rem);
     font-weight: normal;
     margin-bottom: 0;
+    color: #06163E;
 }
 #menu-top-nav {
     flex-flow: row;
@@ -25,6 +26,9 @@
     gap: 2rem;
     font-size: 14px;
     font-weight: 500;
+}
+#menu-top-nav li a {
+    color: #06163E;
 }
 .top-nav {
     padding: 20px 0;
@@ -43,9 +47,9 @@
 }
 
 .dropdown-toggle::after {
-    content: "\e906";
+    content: "\e908";
     font-family: icomoon !important;
     border: 0 !important;
-    font-size: 5px;
+    font-size: 8px;
     margin-left: .7rem;
 }

@@ -53,9 +53,11 @@ $section_title = get_field('page_section_title');
         $auxClass      = $has_image ? 'flex-wrap' : '';
         $auxCenter     = $text_align ? 'text-' . $text_align : '';
         $auxaMargin    = $content ? '' : 'mb-0';
+        $paddClass     = 'pe-4';
 
         if ($position_image === 'left') {
             $auxClass .= ' flex-row-reverse';
+            $paddClass     = 'pe-4';
         }
 
         // Format heading & subheading
@@ -68,18 +70,20 @@ $section_title = get_field('page_section_title');
                 <div class="row justify-content-center align-items-center gx-5 <?php echo esc_attr($auxClass); ?>">
 
                     <div class="col-12 <?php echo $has_image ? 'col-xl-6 order-2 order-xl-0' : 'col-xl-12'; ?>">
-                        <?php if ($has_heading) : ?>
-                            <div class="text-block__header text-secondary <?php echo esc_attr(trim("$auxCenter $auxaMargin")); ?>">
-                                <?php echo $heading; ?>
-                                <?php echo $subheading; ?>
-                            </div>
-                        <?php endif; ?>
+                        <div class="pe-4">
+                            <?php if ($has_heading) : ?>
+                                <div class="text-block__header text-secondary <?php echo esc_attr(trim("$auxCenter $auxaMargin")); ?>">
+                                    <?php echo $heading; ?>
+                                    <?php echo $subheading; ?>
+                                </div>
+                            <?php endif; ?>
 
-                        <?php if ($content) : ?>
-							<div class="text-secondary <?php echo esc_attr(trim("$auxCenter")); ?>">
-                           	 <?php echo wp_kses_post($content); ?>
-							</div>
-                        <?php endif; ?>
+                            <?php if ($content) : ?>
+                                <div class="text-secondary <?php echo esc_attr(trim("$auxCenter")); ?>">
+                                    <?php echo wp_kses_post($content); ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
 
                         <?php if (have_rows('buttons_text_image')) : ?>
                             <div class="block-buttons <?php echo esc_attr(trim("$auxCenter $auxaMargin")); ?>">

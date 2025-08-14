@@ -89,4 +89,8 @@ get_template_part( 'templates/blocks/page-title-block/page-title', 'block', [
     <?php endif; ?>
 </div>
 
+<div id="footer-image">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/img/footer-bg.jpg' ); ?>" alt="immaculate Limousines">
+</div>
+
 <?php get_footer(); ?>

@@ -207,9 +207,9 @@ figure {
 	overflow-x: clip;
 }
 
-.site-main {
-	overflow-x: hidden;
-}
+// .site-main {
+// 	overflow-x: hidden;
+// }
 
 /**************************************/
 /* !- Block Layout                    */
@@ -419,7 +419,7 @@ body .cky-consent-container {
 	}
 
 	.accordion__answer {
-		p {
+		p:last-child {
 			margin: 0;
 		}
 	}

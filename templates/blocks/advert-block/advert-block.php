@@ -56,7 +56,7 @@ $content_order  = ( $image_position === 'order-md-1' ) ? 'order-md-2' : 'order-m
 
                 <!-- Content Column -->
                 <div class="col-md-6 d-flex align-items-center <?php echo esc_attr( $content_order ); ?>">
-                    <div class="p-5 w-100">
+                    <div class="px-3 p-sm-5 py-5 w-100">
                         <?php if ( $heading ) : ?>
                             <h2 class="advert-heading mb-3"><?php echo esc_html( $heading ); ?></h2>
                         <?php endif; ?>
