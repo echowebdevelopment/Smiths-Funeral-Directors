@@ -11,6 +11,7 @@
 .echo-mega-menu {
   border-bottom: 10px solid $primary;
   padding: 3rem 2rem;
+  background: url(../img/flower-bg.png) no-repeat right bottom -100px;
 }
 @media (max-width: 1199.98px) {
   .echo-mega-menu {
@@ -22,9 +23,9 @@
 }
 
 @media (max-width: 1199.98px) {
-  header .navbar-nav .nav-link {
-    font-size: clamp(1.25rem, 0.1363rem + 2.3202vw, 1.875rem) !important;
-  }
+  // header .navbar-nav .nav-link {
+  //   font-size: clamp(1.25rem, 0.1363rem + 2.3202vw, 1.875rem) !important;
+  // }
   .offcanvas-body {
     padding: 2rem;
   }
@@ -263,3 +264,6 @@
   }
 }
 
+.echo-mega-menu .short-intro * {
+  color: #363A41;
+}

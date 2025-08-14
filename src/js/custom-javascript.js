@@ -135,33 +135,33 @@ jQuery(document).ready(function($) {
 	});
 });
 
-jQuery(function ($) {
-	function setEqualCardBodyHeight() {
-		var maxHeight = 0;
+// jQuery(function ($) {
+// 	function setEqualCardBodyHeight() {
+// 		var maxHeight = 0;
 
-		// Reset first so recalculations work on resize
-		$('.card-body').css('height', 'auto');
+// 		// Reset first so recalculations work on resize
+// 		$('.card-body').css('height', 'auto');
 
-		// Find max height
-		$('.card-body').each(function () {
-			var thisHeight = $(this).outerHeight();
+// 		// Find max height
+// 		$('.card-body').each(function () {
+// 			var thisHeight = $(this).outerHeight();
 
-			if (thisHeight > maxHeight) {
-				maxHeight = thisHeight;
-			}
-		});
+// 			if (thisHeight > maxHeight) {
+// 				maxHeight = thisHeight;
+// 			}
+// 		});
 
-		// Apply max height to all
-		$('.card-body').height(maxHeight);
-	}
+// 		// Apply max height to all
+// 		$('.card-body').height(maxHeight);
+// 	}
 
-	// Run on load
-	$(window).on('load', function () {
-		setEqualCardBodyHeight();
-	});
+// 	// Run on load
+// 	$(window).on('load', function () {
+// 		setEqualCardBodyHeight();
+// 	});
 
-	// Run on resize
-	$(window).on('resize', function () {
-		setEqualCardBodyHeight();
-	});
-});
+// 	// Run on resize
+// 	$(window).on('resize', function () {
+// 		setEqualCardBodyHeight();
+// 	});
+// });

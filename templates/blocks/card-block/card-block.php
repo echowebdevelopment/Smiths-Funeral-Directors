@@ -38,12 +38,12 @@ $buttons             = get_field( 'buttons' );
                 $title = $card['card_title'];
                 $image = $card['card_image'];
                 $link  = $card['card_link'];
-                $image_url = $image ? wp_get_attachment_image_url( $image, 'medium' ) : '';
+                $image_url = $image ? wp_get_attachment_image_url( $image, 'large' ) : '';
                 $image_alt = $image ? get_post_meta( $image, '_wp_attachment_image_alt', true ) : '';
                 $url = $link['url'] ?? '#';
                 $target = $link['target'] ?? '_self';
             ?>
-                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="col-xs-6 col-md-4 col-lg-3 mb-4">
                      <?php if ( $link ) : ?>
                         <a href="<?php echo esc_url( $url ); ?>" class="" target="<?php echo esc_attr( $target ); ?>">
                     <?php endif; ?>

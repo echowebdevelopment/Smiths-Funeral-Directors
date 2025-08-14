@@ -154,7 +154,7 @@ $linkedin = get_field( 'linkedin', 'option' );
 
 					<div class="site-info py-3 text-center">
 
-						© Peterborough Funeral Services Ltd <?php echo date('Y') ?>. <br>
+						© Peterborough Funeral Services Ltd <?php echo date('Y') ?>. Website Design by <a href="https://www.echowebsolutions.co.uk/web-design-peterborough/"><img class="echo-logo" src="<?php echo get_template_directory_uri() .'/img/echo-logo.png' ?>" alt="Echo"><br>
 						The content on this website is owned by us and our licensors. Do not copy any content (including images) without our consent.
 
 					</div><!-- .site-info -->

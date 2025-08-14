@@ -6267,35 +6267,37 @@
       $('.btn-close-mega').removeClass("show");
     });
   });
-  jQuery(function ($) {
-    function setEqualCardBodyHeight() {
-      var maxHeight = 0;
 
-      // Reset first so recalculations work on resize
-      $('.card-body').css('height', 'auto');
+  // jQuery(function ($) {
+  // 	function setEqualCardBodyHeight() {
+  // 		var maxHeight = 0;
 
-      // Find max height
-      $('.card-body').each(function () {
-        var thisHeight = $(this).outerHeight();
-        if (thisHeight > maxHeight) {
-          maxHeight = thisHeight;
-        }
-      });
+  // 		// Reset first so recalculations work on resize
+  // 		$('.card-body').css('height', 'auto');
 
-      // Apply max height to all
-      $('.card-body').height(maxHeight);
-    }
+  // 		// Find max height
+  // 		$('.card-body').each(function () {
+  // 			var thisHeight = $(this).outerHeight();
 
-    // Run on load
-    $(window).on('load', function () {
-      setEqualCardBodyHeight();
-    });
+  // 			if (thisHeight > maxHeight) {
+  // 				maxHeight = thisHeight;
+  // 			}
+  // 		});
 
-    // Run on resize
-    $(window).on('resize', function () {
-      setEqualCardBodyHeight();
-    });
-  });
+  // 		// Apply max height to all
+  // 		$('.card-body').height(maxHeight);
+  // 	}
+
+  // 	// Run on load
+  // 	$(window).on('load', function () {
+  // 		setEqualCardBodyHeight();
+  // 	});
+
+  // 	// Run on resize
+  // 	$(window).on('resize', function () {
+  // 		setEqualCardBodyHeight();
+  // 	});
+  // });
 
   exports.Alert = Alert;
   exports.Button = Button;

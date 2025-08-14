@@ -5445,12 +5445,17 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 
 /*Page Title Block*/
 .page-title-block {
-  min-height: 450px;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: start;
+  min-height: 250px;
 }
-.page-title-block .text-block__header {
+@media screen and (min-width: 576px) {
+  .page-title-block {
+    min-height: 450px;
+  }
+}
+.page-title-block .text-block__header, .page-title-block + .text-block__header {
   z-index: 2;
   position: relative;
   background: linear-gradient(90deg, rgba(218, 237, 255, 0.7) 0%, rgba(218, 237, 255, 0.7) 41%, rgba(218, 237, 255, 0) 100%) no-repeat padding-box;
@@ -5461,8 +5466,15 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   max-width: max-content;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
-.page-title-block .text-block__header h1, .page-title-block .text-block__header .h1 {
+.page-title-block .text-block__header h1, .page-title-block .text-block__header .h1, .page-title-block + .text-block__header h1, .page-title-block + .text-block__header .h1 {
   font-weight: 300 !important;
+}
+.page-title-block + .text-block__header {
+  max-width: none;
+  color: inherit;
+  text-shadow: none;
+  padding: 2rem 1rem;
+  background-color: #D7ECF5;
 }
 
 .page-title-block img.text-block__img {
@@ -5470,10 +5482,12 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   object-fit: cover;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1;
   height: 100%;
   width: 100%;
+  -o-object-position: 82% 0%;
+  object-position: 82% 0%;
 }
 
 #breadcrumbs {
@@ -5514,6 +5528,12 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   justify-content: center;
   align-items: center;
   height: 120px; /* fixed height container if needed */
+}
+
+.usp-title {
+  color: #06163E;
+  font-size: clamp(1.5rem, 0.7857rem + 1.1161vw, 1.9rem);
+  font-weight: 300;
 }
 
 /* Image Divider Block */
@@ -5633,6 +5653,12 @@ button.slick-next.slick-arrow:hover {
   background-color: #BCAF9C !important;
   color: #fff !important;
 }
+@media screen and (max-width: 576px) {
+  button.slick-prev.slick-arrow,
+  button.slick-next.slick-arrow {
+    display: none !important;
+  }
+}
 
 .testimonial-slider .slick-prev:before, .testimonial-slider .slick-next:before {
   color: #BCAF9C !important;
@@ -5708,6 +5734,16 @@ button.slick-next.slick-arrow:hover {
     display: flex;
     justify-content: end;
   }
+}
+@media (max-width: 575.98px) {
+  .testimonial-slider .slick-slide {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.testimonial-slider-section h2.section-title, .testimonial-slider-section .section-title.h2 {
+  padding: 0 30px;
 }
 
 /* Card Block */
@@ -5837,6 +5873,13 @@ details[open] .accordion-items__item__question::after {
   transition: transform 0.3s ease;
 }
 
+/* css override */
+@media (min-width: 480px) {
+  .col-xs-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
 .components-circular-option-picker__option {
   border-radius: 50%;
 }

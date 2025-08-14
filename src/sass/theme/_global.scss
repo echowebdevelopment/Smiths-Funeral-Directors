@@ -275,6 +275,7 @@ textarea {
 .carousel .page-title-block .text-block__heading {
     max-width: 518px;
 	font-size: clamp(3rem, 2.1429rem + 1.3393vw, 3.75rem);
+    color: white;
 }
 .carousel .page-title-block:before {
     content: '';
@@ -285,6 +286,7 @@ textarea {
     z-index: 2;
     opacity: .2;
     box-shadow: inset 0px 0px 99px #FFFFFF84;
+    top: 0;
 }
 .carousel .page-title-block {
 	min-height: 75vh;
@@ -306,7 +308,10 @@ textarea {
 }
 
 .text-image-block .container {
-    border-bottom: 1px solid $secondary;
+    @media screen and (min-width:576px) {
+        border-bottom: 1px solid $secondary;
+    }
+    
     &:last-child {
         border-bottom: 0;
     }
