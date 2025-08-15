@@ -12232,13 +12232,13 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .page-title-block .text-block__header, .page-title-block + .text-block__header {
   z-index: 2;
   position: relative;
-  background: linear-gradient(90deg, rgba(218, 237, 255, 0.7) 0%, rgba(218, 237, 255, 0.7) 41%, rgba(218, 237, 255, 0) 100%) no-repeat padding-box;
+  background: linear-gradient(90deg, rgba(218, 237, 255, 0.7) 0%, rgba(218, 237, 255, 0.7) 50%, rgba(218, 237, 255, 0) 100%) no-repeat padding-box;
   width: 100%;
   padding: 2rem;
   color: #fff;
   max-width: -moz-max-content;
   max-width: max-content;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 .page-title-block .text-block__header h1, .page-title-block .text-block__header .h1, .page-title-block + .text-block__header h1, .page-title-block + .text-block__header .h1 {
   font-weight: 300 !important;
@@ -13155,6 +13155,12 @@ h4,
   font-weight: 300;
 }
 
+h5, .h5 {
+  font-size: clamp(1.25rem, 1.2321rem + 0.2232vw, 1.37rem);
+  color: #363A41;
+  font-weight: 300;
+}
+
 .text-block__subheading,
 .subtitle {
   font-size: clamp(1.125rem, 0.8393rem + 0.4464vw, 1.375rem);
@@ -13222,6 +13228,11 @@ h4,
   border: 0 !important;
   font-size: 8px;
   margin-left: 0.7rem;
+}
+@media screen and (min-width: 991px) {
+  .dropdown-toggle::after {
+    content: "\e906";
+  }
 }
 
 hr {
@@ -13524,6 +13535,7 @@ textarea {
 
 .carousel .page-title-block .text-block__header .btn, .carousel .page-title-block .text-block__header .wpcf7 input[type=submit], .wpcf7 .carousel .page-title-block .text-block__header input[type=submit], .carousel .page-title-block .text-block__header .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .carousel .page-title-block .text-block__header a.button, .carousel .page-title-block .text-block__header .woocommerce-info a.button, .woocommerce-info .carousel .page-title-block .text-block__header a.button {
   padding: 1rem 2.5rem;
+  text-shadow: none;
 }
 
 .carousel .page-title-block .text-block__heading {
@@ -13598,6 +13610,19 @@ body .cky-consent-container {
   align-items: center;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.4117647059);
   border-radius: 0 !important;
+}
+
+.cky-btn-accept {
+  margin-right: 8px !important;
+}
+
+.cky-btn-customize {
+  margin-right: 0 !important;
+}
+
+.cky-btn-accept,
+.cky-btn-customize {
+  text-decoration: underline !important;
 }
 
 /*Pagination*/
@@ -13815,8 +13840,8 @@ h3.footer-title, .footer-title.h3 {
 
 #wrapper-footer .echo-logo {
   display: inline-block;
-  height: 12px;
-  margin: -4px 0 0 0;
+  height: 13px;
+  margin: -5px 0 0 0;
 }
 
 /************************************************

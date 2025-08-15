@@ -271,6 +271,7 @@ textarea {
 }
 .carousel .page-title-block .text-block__header .btn {
     padding: 1rem 2.5rem;
+    text-shadow: none;
 }
 .carousel .page-title-block .text-block__heading {
     max-width: 518px;
@@ -342,6 +343,19 @@ body .cky-consent-container {
     align-items: center;
     box-shadow: 0px 3px 20px #00000069;
     border-radius: 0 !important;
+}
+
+.cky-btn-accept {
+    margin-right: 8px !important;
+}
+
+.cky-btn-customize {
+    margin-right: 0 !important;
+}
+
+.cky-btn-accept,
+.cky-btn-customize {
+    text-decoration: underline !important;
 }
 
 /*Pagination*/

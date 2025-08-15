@@ -25,9 +25,16 @@ if ($query->have_posts()): ?>
     <section class="product-feed echo-block <?php echo esc_attr($block['className'] ?? ''); ?>">
         <div class="py-5">
         <div class="container">
-            <h2 class="section-title mb-5">
-                <?php echo $category ? esc_html($category->name) : 'Our Products'; ?>
-            </h2>
+            <div class="mb-5">
+                <h2 class="section-title">
+                    <?php echo $category ? esc_html($category->name) : 'Our Products'; ?>
+                </h2>
+                <?php if ( $category ) { ?>
+                <h5 class="section-title">
+                    <?php echo esc_html($category->description); ?>
+                </h5>
+            </div>
+            <?php } ?>
             <div class="row g-5">
                 <?php while ($query->have_posts()):
                     $query->the_post();

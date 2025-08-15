@@ -62,7 +62,7 @@ $content_order  = ( $image_position === 'order-md-1' ) ? 'order-md-2' : 'order-m
                         <?php endif; ?>
 
                         <?php if ( $text ) : ?>
-                            <div class="advert-text mb-4 text-muted">
+                            <div class="advert-text mb-4">
                                 <?php echo wp_kses_post( $text ); ?>
                             </div>
                         <?php endif; ?>
@@ -88,7 +88,7 @@ $content_order  = ( $image_position === 'order-md-1' ) ? 'order-md-2' : 'order-m
                     <?php endif; ?>
 
                     <?php if ( $text ) : ?>
-                        <div class="advert-text text-muted">
+                        <div class="advert-text">
                             <?php echo wp_kses_post( $text ); ?>
                         </div>
                     <?php endif; ?>
