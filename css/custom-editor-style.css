@@ -5473,7 +5473,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   max-width: none;
   color: inherit;
   text-shadow: none;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 100px;
   background-color: #D7ECF5;
 }
 

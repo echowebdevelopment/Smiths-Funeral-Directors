@@ -12247,7 +12247,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   max-width: none;
   color: inherit;
   text-shadow: none;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 100px;
   background-color: #D7ECF5;
 }
 
@@ -13557,7 +13557,12 @@ textarea {
 }
 
 .carousel .page-title-block {
-  min-height: 75vh;
+  min-height: 35vh;
+}
+@media screen and (min-width: 576px) {
+  .carousel .page-title-block {
+    min-height: 75vh;
+  }
 }
 
 @media (min-width: 768px) {

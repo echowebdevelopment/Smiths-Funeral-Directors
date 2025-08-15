@@ -77,3 +77,33 @@ $show_rating = get_field('hero_show_rating');
 	<?php endif; ?>
 </div>
 </section>
+
+<script>
+jQuery(function($) {
+    function moveHeader() {
+        $('#heroCarousel .text-block__header.mb-0').each(function() {
+            var $header = $(this);
+            var $block = $header.data('original-parent');
+
+            // Store the original .page-title-block if not stored yet
+            if (!$block) {
+                $block = $header.closest('.page-title-block');
+                $header.data('original-parent', $block);
+            }
+
+            if ($(window).width() < 576) {
+                if ($header.parent().is($block)) {
+                    $header.insertAfter($block);
+                }
+            } else {
+                if (!$header.parent().is($block)) {
+                    $header.prependTo($block);
+                }
+            }
+        });
+    }
+
+    moveHeader(); // Run on page load
+    $(window).on('resize', moveHeader); // Run on resize
+});
+</script>
