@@ -129,14 +129,24 @@ $linkedin = get_field( 'linkedin', 'option' );
 				<hr class="my-5 text-secondary">
 
 				<div class="row align-items-center">
-					<div class="col-md-2 col-6 text-center">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/img/golden-charter-logo.png' ); ?>" alt="Golden Charter Logo" class="golden-charter-logo">
+					<div class="col-12 col-xl-6 row align-items-center">
+						<div class="col-sm-3 col-6 text-center">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/img/golden-charter-logo.png' ); ?>" alt="Golden Charter Logo" class="golden-charter-logo">
+						</div>
+						<div class="col-sm-3 col-6 text-center">
+							<img src="/wp-content/uploads/2025/07/SAIF.svg" alt="SAIF Logo">
+						</div>
+						<div class="col-sm-3 col-6 text-center">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/img/bielogo.png' ); ?>" alt="Golden Charter Logo" class="Bie Logo">
+						</div>
+						<div class="col-sm-3 col-6 text-center">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/img/iso-logo.svg' ); ?>" alt="ISO Logo">
+						</div>
 					</div>
-					<div class="col-md-2 col-6 text-center">
-						<img src="/wp-content/uploads/2025/07/SAIF.svg" alt="SAIF Logo">
-					</div>
-					<div class="col-md-8 col-sm-12">
-						Peterborough Funeral Services Ltd trading as Smiths Funeral Directors, is an appointed representative of Golden Charter Limited trading as Golden Charter Funeral Plans which is authorised and regulated by the Financial Conduct Authority (FRN:965279).
+					<div class="col-12 col-xl-6 row">
+						<div class="col-12">
+							Peterborough Funeral Services Ltd trading as Smiths Funeral Directors, is an appointed representative of Golden Charter Limited trading as Golden Charter Funeral Plans which is authorised and regulated by the Financial Conduct Authority (FRN:965279).
+						</div>
 					</div>
 				</div>
 			</div>	

@@ -24,7 +24,7 @@ $align_class = 'text-left text-sm-' . esc_attr($alignment);
 
 // Output
 ?>
-<section id="<?php echo esc_attr($block['anchor'] ?? ''); ?>" class="section-title-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>" >
+<section id="<?php echo esc_attr($block['anchor'] ?? ''); ?>" class="section-title-block echo-block <?php echo esc_attr($block['className'] ?? ''); ?>" style="overflow: hidden;">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-8 text-block__header <?php echo $align_class; ?>">
