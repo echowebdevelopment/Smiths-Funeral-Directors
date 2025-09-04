@@ -31,7 +31,7 @@ $phone = get_field( 'phone', 'option' );
 			);
 		?>
 		<div class="phone-number d-none d-lg-block">
-			<span>Contact us 24/7 on</span>
+			<span>24 Hours Service</span>
 			<a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
 		</div>
 		<a class="btn btn-primary" href="/contact-us/">
