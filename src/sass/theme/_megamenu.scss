@@ -13,13 +13,21 @@
   padding: 3rem 2rem;
   background: url(../img/flower-bg.png) no-repeat right bottom -100px;
 }
+
+// #main-nav {
+//   #navbarNavOffcanvas {
+//     background: url(../img/flower-bg.png) no-repeat right bottom -100px;
+//   }
+// }
+
 @media (max-width: 1199.98px) {
   .echo-mega-menu {
-    height: 100%;
+    height: calc(100vh - 80px);
+    overflow: auto;
   }
-  .echo-mega-menu .acf-nav-menu {
-    padding: 1rem;
-  }
+  // .echo-mega-menu .acf-nav-menu {
+  //   padding: 1rem;
+  // }
 }
 
 @media (max-width: 1199.98px) {
@@ -124,7 +132,7 @@
   background: #F8F8F8 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 992px) {
   .dropdown-menu.echo-menu-shortcode {
     box-shadow: none;
     border: none !important;
@@ -256,8 +264,14 @@
 .acf-nav-menu {
   .menu {
     list-style: none;
-    display: flex;
-    gap: 1rem;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 1rem;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 1rem;
+    }
   }
   a {
     text-decoration: none;

@@ -9,6 +9,10 @@ $defaults = array(
 $args = wp_parse_args($args, $defaults);
 $data = $args['data'];
 
+// echo '<pre>';
+// var_dump($data['grouped_menus']);
+// echo '</pre>';
+
 // Extract values with default fallbacks
 $title = isset($data['title']) ? $data['title'] : '';
 $desc = isset($data['short_description']) ? $data['short_description'] : '';
@@ -22,15 +26,26 @@ $strippedparent = function_exists('clean') ? clean($parent) : sanitize_title($pa
 
 <div class="position-relative echo-mega-menu padding w-100">
     <div class="container-fluid py-3">
-        <div class="row">
+        <div class="row g-5">
             <div class="main-title col-12 col-xl-3">
                 <h3 class="text-secondary"><?php echo esc_html($title); ?></h3>
                 <div class="short-intro d-none d-xl-block"><?php echo $desc; ?></div>
             </div>
             <div class="col-12 col-xl-9">
+                <?php if ( $data['use_grouped_menus'] == false ) : ?>
                 <div class="row" id="<?php echo esc_attr($strippedparent); ?>">
                     <?php echo $menu; // Trusted HTML, so direct output ?>
                 </div>
+                <?php else : ?>
+                <div class="row g-3">
+                    <?php foreach ( $data['grouped_menus'] as $menu_arr ) : ?>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <p class="h5 text-secondary fw-normal mb-3"><?php echo $menu_arr['title'] ?></p>
+                        <?php echo $menu_arr['menu']; // Trusted HTML, so direct output ?>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

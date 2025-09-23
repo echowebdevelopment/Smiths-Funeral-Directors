@@ -13867,10 +13867,8 @@ h3.footer-title, .footer-title.h3 {
 
 @media (max-width: 1199.98px) {
   .echo-mega-menu {
-    height: 100%;
-  }
-  .echo-mega-menu .acf-nav-menu {
-    padding: 1rem;
+    height: calc(100vh - 80px);
+    overflow: auto;
   }
 }
 @media (max-width: 1199.98px) {
@@ -13984,7 +13982,7 @@ h3.footer-title, .footer-title.h3 {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 992px) {
   .dropdown-menu.echo-menu-shortcode {
     box-shadow: none;
     border: none !important;
@@ -14126,8 +14124,10 @@ h3.footer-title, .footer-title.h3 {
 }
 .acf-nav-menu .menu {
   list-style: none;
-  display: flex;
-  gap: 1rem;
+  padding-left: 0;
+}
+.acf-nav-menu .menu li {
+  margin-bottom: 1rem;
 }
 .acf-nav-menu a {
   text-decoration: none;
