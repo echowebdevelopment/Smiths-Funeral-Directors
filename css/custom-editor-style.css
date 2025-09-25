@@ -5835,6 +5835,9 @@ td {
 .accordion__answer {
   padding: 1rem 1rem 2rem;
 }
+.accordion__answer a {
+  color: #06163E;
+}
 
 .accordion-items__item__question {
   position: relative;

@@ -35,7 +35,7 @@ $link = get_field('link_all_faqs');
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<?php if ($heading) { ?>
-						<div class="text-block__header <?php echo $auxCenter ?>">
+						<div class="text-block__header <?php echo $auxCenter ?> mb-5">
 							<?php echo $heading; ?>
 							<?php if ($subheading) { ?>
 								<?php echo $subheading; ?>

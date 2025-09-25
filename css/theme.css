@@ -12609,6 +12609,9 @@ td {
 .accordion__answer {
   padding: 1rem 1rem 2rem;
 }
+.accordion__answer a {
+  color: #06163E;
+}
 
 .accordion-items__item__question {
   position: relative;
@@ -13170,14 +13173,15 @@ h5, .h5 {
 #wrapper-navbar {
   box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.4156862745);
 }
-#wrapper-navbar a:not(.btn):hover {
-  color: #BCAF9C;
-}
 
 #main-nav a {
   color: #06163E;
   font-size: 16px;
   font-weight: normal;
+  transition: all 0.3s;
+}
+#main-nav a:hover {
+  text-shadow: 0.2px 0.2px 0.2px #06163E;
 }
 
 .navbar-brand img {
@@ -13568,12 +13572,17 @@ textarea {
 @media (min-width: 768px) {
   .echo-menu-shortcode .acf-nav-menu .menu {
     flex-wrap: wrap;
+    display: flex;
   }
   .echo-menu-shortcode .acf-nav-menu .menu li {
     flex: 0 0 40%;
     padding: 0 2rem;
   }
 }
+.echo-menu-shortcode .grouped-menus .acf-nav-menu .menu {
+  display: block !important;
+}
+
 @media (max-width: 767.98px) {
   .echo-menu-shortcode .acf-nav-menu .menu {
     flex-flow: column;

@@ -1,13 +1,19 @@
 #wrapper-navbar {
     box-shadow: 0px 3px 16px #0000006A;
-    a:not(.btn):hover {
-        color: $tertiary;
-    }
+    // a:not(.btn):hover {
+    //     color: $tertiary;
+    // }
 }
 #main-nav a {
     color: $secondary;
     font-size: 16px;
     font-weight: normal;
+    transition: all 0.3s;
+
+    &:hover {
+        // font-weight: bold;
+        text-shadow: 0.2px 0.2px 0.2px $secondary;
+    }
 }
 .navbar-brand img {
     max-height: 66px;

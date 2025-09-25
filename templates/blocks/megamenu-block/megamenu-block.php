@@ -37,7 +37,7 @@ $strippedparent = function_exists('clean') ? clean($parent) : sanitize_title($pa
                     <?php echo $menu; // Trusted HTML, so direct output ?>
                 </div>
                 <?php else : ?>
-                <div class="row g-3">
+                <div class="row g-3 grouped-menus">
                     <?php foreach ( $data['grouped_menus'] as $menu_arr ) : ?>
                     <div class="col-12 col-md-6 col-xl-4">
                         <p class="h5 text-secondary fw-normal mb-3"><?php echo $menu_arr['title'] ?></p>

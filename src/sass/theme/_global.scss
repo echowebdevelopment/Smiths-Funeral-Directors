@@ -300,12 +300,18 @@ textarea {
 @include media-breakpoint-up(md) {
 	.echo-menu-shortcode .acf-nav-menu .menu{
 		flex-wrap: wrap;
+        display: flex;
 	}
 	.echo-menu-shortcode .acf-nav-menu .menu li {
 		flex: 0 0 40%;
 		padding: 0 2rem;
 	}
 }
+
+.echo-menu-shortcode .grouped-menus .acf-nav-menu .menu {
+    display: block !important;
+}
+
 @include media-breakpoint-down(md) {
     .echo-menu-shortcode .acf-nav-menu .menu {
         flex-flow: column;
