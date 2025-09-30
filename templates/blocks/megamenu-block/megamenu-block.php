@@ -9,10 +9,6 @@ $defaults = array(
 $args = wp_parse_args($args, $defaults);
 $data = $args['data'];
 
-// echo '<pre>';
-// var_dump($data['grouped_menus']);
-// echo '</pre>';
-
 // Extract values with default fallbacks
 $title = isset($data['title']) ? $data['title'] : '';
 $desc = isset($data['short_description']) ? $data['short_description'] : '';
@@ -39,8 +35,8 @@ $strippedparent = function_exists('clean') ? clean($parent) : sanitize_title($pa
                 <?php else : ?>
                 <div class="row g-3 grouped-menus">
                     <?php foreach ( $data['grouped_menus'] as $menu_arr ) : ?>
-                    <div class="col-12 col-md-6 col-xl-4">
-                        <p class="h5 text-secondary fw-normal mb-3"><?php echo $menu_arr['title'] ?></p>
+                    <div class="col-12 col-md-6 col-xl-4" id="menu-<?php echo strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $menu_arr['title']))); ?>">
+                        <p class="menu-label h5 text-secondary fw-normal mb-3"><?php echo $menu_arr['title'] ?></p>
                         <?php echo $menu_arr['menu']; // Trusted HTML, so direct output ?>
                     </div>
                     <?php endforeach; ?>
@@ -50,3 +46,31 @@ $strippedparent = function_exists('clean') ? clean($parent) : sanitize_title($pa
         </div>
     </div>
 </div>
+
+<style>
+    #menu-memorial .menu-label {
+        cursor: pointer;
+    }
+
+    #menu-memorial .acf-nav-menu {
+        display: none;
+    }
+</style>
+
+<script>
+    jQuery(function($) {
+        $('#menu-our-service-room')
+            .insertAfter('#menu-funeral-costs > .acf-nav-menu')
+            .removeClass('col-12 col-md-6 col-xl-4')
+            .addClass('mt-4 mt-xl-5');
+
+        $('#menu-memorial')
+            .insertAfter('#menu-our-service-room')
+            .removeClass('col-12 col-md-6 col-xl-4')
+            .addClass('mt-4 mt-xl-5');
+        
+        $('#menu-memorial .menu-label').on('click', function() {
+            location.href="/memorials";
+        });
+    });
+</script>
