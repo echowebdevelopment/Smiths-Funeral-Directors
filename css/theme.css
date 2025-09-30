@@ -12240,9 +12240,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   max-width: max-content;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
-.page-title-block .text-block__header h1, .page-title-block .text-block__header .h1, .page-title-block + .text-block__header h1, .page-title-block + .text-block__header .h1 {
-  font-weight: 300 !important;
-}
 .page-title-block + .text-block__header {
   max-width: none;
   color: inherit;
@@ -12307,7 +12304,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .usp-title {
   color: #06163E;
   font-size: clamp(1.5rem, 0.7857rem + 1.1161vw, 1.9rem);
-  font-weight: 300;
 }
 
 /* Image Divider Block */
@@ -12347,7 +12343,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   font-size: clamp(1.375rem, 0.8036rem + 0.8929vw, 1.875rem);
   font-style: italic;
   color: #06163E;
-  font-weight: 300;
 }
 
 .pull-quote-name {
@@ -12376,7 +12371,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 
 .testimonial-content {
   font-size: clamp(1.125rem, 0.993rem + 0.4225vw, 1.5rem);
-  font-weight: 300;
   font-style: italic;
   line-height: 1.6em;
   color: #06163E;
@@ -12829,6 +12823,118 @@ figure.woocommerce-product-gallery__wrapper {
   font-style: normal;
   font-display: block;
 }
+/* figtree-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/figtree-v9-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/figtree-v9-latin-300italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/figtree-v9-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/figtree-v9-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/figtree-v9-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/figtree-v9-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/figtree-v9-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/figtree-v9-latin-600italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/figtree-v9-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/figtree-v9-latin-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/figtree-v9-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/figtree-v9-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/figtree-v9-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/figtree-v9-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /**************************************/
 /* !- Icon Font                       */
 /**************************************/
@@ -13129,25 +13235,21 @@ body .cky-consent-container {
 }
 
 body {
-  font-family: "Sofia Pro";
-  font-weight: 300;
+  font-family: "Figtree";
   color: #363A41;
 }
 
 h1, .h1 {
   font-size: clamp(2rem, 2.1429rem + 1.3393vw, 3.75rem);
-  font-weight: 300;
 }
 
 h2, .h2 {
   font-size: clamp(2.125rem, 1.125rem + 1.5625vw, 3rem);
-  font-weight: 300;
   color: #06163E;
 }
 
 h3, .h3 {
   font-size: clamp(1.5rem, 0.7857rem + 1.1161vw, 2.125rem);
-  font-weight: 300;
   color: #06163E;
 }
 
@@ -13155,19 +13257,16 @@ th,
 h4,
 .h4 {
   font-size: clamp(1.375rem, 1.2321rem + 0.2232vw, 1.5rem);
-  font-weight: 300;
 }
 
 h5, .h5 {
   font-size: clamp(1.25rem, 1.2321rem + 0.2232vw, 1.37rem);
   color: #363A41;
-  font-weight: 300;
 }
 
 .text-block__subheading,
 .subtitle {
   font-size: clamp(1.125rem, 0.8393rem + 0.4464vw, 1.375rem);
-  font-weight: 500;
 }
 
 #wrapper-navbar {
@@ -13180,8 +13279,43 @@ h5, .h5 {
   font-weight: normal;
   transition: all 0.3s;
 }
+@media screen and (min-width: 991px) {
+  #main-nav a {
+    text-align: center;
+  }
+}
 #main-nav a:hover {
-  text-shadow: 0.2px 0.2px 0.2px #06163E;
+  font-weight: bold;
+}
+#main-nav a::before {
+  content: attr(data-text);
+  content: attr(data-text)/"";
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  font-weight: bold;
+  display: block;
+  font-size: inherit;
+  font-family: Figtree !important;
+}
+#main-nav a.echo-dropdown-toggle::before {
+  margin-left: calc(15.08px + 0.7rem);
+}
+
+#main-nav li.facebook-link a {
+  font-size: 0;
+}
+#main-nav li.facebook-link a::before {
+  content: "\e90c";
+  font-family: icomoon !important;
+  font-size: 20px;
+  height: auto;
+  visibility: visible;
+  color: #06163E;
 }
 
 .navbar-brand img {
@@ -13215,6 +13349,11 @@ h5, .h5 {
 
 #main-menu {
   gap: 10px;
+}
+@media screen and (min-width: 991px) {
+  #main-menu {
+    align-items: center;
+  }
 }
 
 .navbar-toggler-icon {
@@ -13425,10 +13564,6 @@ ol li::before {
 
 .product-card__image:hover img {
   transform: scale(1.1);
-}
-
-.team-card_title {
-  font-weight: 300;
 }
 
 .team-card_position {

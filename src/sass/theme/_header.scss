@@ -10,9 +10,52 @@
     font-weight: normal;
     transition: all 0.3s;
 
+    @media screen and (min-width:991px) {
+        text-align: center;
+    }
+
     &:hover {
-        // font-weight: bold;
-        text-shadow: 0.2px 0.2px 0.2px $secondary;
+        font-weight: bold;
+        // text-shadow: 0.2px 0.2px 0.2px $secondary;
+    }
+
+    &::before {
+        content: attr(data-text);
+        content: attr(data-text) / "";
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        pointer-events: none;
+        font-weight: bold;
+        display: block;
+        font-size: inherit;
+        font-family: Figtree !important;
+    }
+
+    &.echo-dropdown-toggle {
+        &::before {
+            margin-left: calc(15.08px + .7rem);
+        }
+    }
+}
+#main-nav {
+    li.facebook-link {
+        a {
+            font-size: 0;
+
+            &::before {
+                content: "\e90c";
+                font-family: icomoon !important;
+                font-size: 20px;
+                height: auto;
+                visibility: visible;
+                color: $secondary;
+            }
+        }
     }
 }
 .navbar-brand img {
@@ -42,6 +85,10 @@
 
 #main-menu {
     gap: 10px;
+
+    @media screen and (min-width:991px) {
+        align-items: center;
+    }
 }
 
 .navbar-toggler-icon {

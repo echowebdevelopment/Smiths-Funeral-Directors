@@ -5466,9 +5466,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   max-width: max-content;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
-.page-title-block .text-block__header h1, .page-title-block .text-block__header .h1, .page-title-block + .text-block__header h1, .page-title-block + .text-block__header .h1 {
-  font-weight: 300 !important;
-}
 .page-title-block + .text-block__header {
   max-width: none;
   color: inherit;
@@ -5533,7 +5530,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .usp-title {
   color: #06163E;
   font-size: clamp(1.5rem, 0.7857rem + 1.1161vw, 1.9rem);
-  font-weight: 300;
 }
 
 /* Image Divider Block */
@@ -5573,7 +5569,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   font-size: clamp(1.375rem, 0.8036rem + 0.8929vw, 1.875rem);
   font-style: italic;
   color: #06163E;
-  font-weight: 300;
 }
 
 .pull-quote-name {
@@ -5602,7 +5597,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 
 .testimonial-content {
   font-size: clamp(1.125rem, 0.993rem + 0.4225vw, 1.5rem);
-  font-weight: 300;
   font-style: italic;
   line-height: 1.6em;
   color: #06163E;

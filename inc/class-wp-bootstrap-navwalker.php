@@ -209,6 +209,8 @@ if ( ! class_exists( 'Understrap_WP_Bootstrap_Navwalker' ) ) {
 
 			$atts['aria-current'] = $item->current ? 'page' : '';
 
+			$atts['data-text'] = esc_attr( $item->title );
+
 			// update atts of this item based on any custom linkmod classes.
 			$atts = self::update_atts_for_linkmod_type( $atts, $linkmod_classes );
 			// Allow filtering of the $atts array before using it.

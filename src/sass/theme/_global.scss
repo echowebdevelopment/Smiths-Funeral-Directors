@@ -176,9 +176,9 @@ ol li::before {
 .product-card__image:hover img {
     transform: scale(1.1);
 }
-.team-card_title {
-    font-weight: 300;
-}
+// .team-card_title {
+//     font-weight: 300;
+// }
 .team-card_position {
     font-size: clamp(1.125rem, 0.993rem + 0.4225vw, 1.5rem);
     font-weight: 500;
