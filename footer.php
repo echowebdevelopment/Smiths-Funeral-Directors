@@ -134,7 +134,7 @@ $linkedin = get_field( 'linkedin', 'option' );
 							<img src="<?php echo esc_url( get_template_directory_uri() . '/img/golden-charter-logo.png' ); ?>" alt="Golden Charter Logo" class="golden-charter-logo">
 						</div>
 						<div class="col-sm-3 col-6 text-center">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/img/saif.jpg' ); ?>" alt="SAIF Logo">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/img/saif-new.png' ); ?>" alt="SAIF Logo">
 						</div>
 						<div class="col-sm-3 col-6 text-center">
 							<img src="<?php echo esc_url( get_template_directory_uri() . '/img/bielogo.png' ); ?>" alt="Golden Charter Logo" class="Bie Logo">
