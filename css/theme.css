@@ -12239,6 +12239,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   max-width: -moz-max-content;
   max-width: max-content;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  min-width: 450px;
 }
 .page-title-block + .text-block__header {
   max-width: none;
@@ -13319,7 +13320,7 @@ h5, .h5 {
 }
 
 .navbar-brand img {
-  max-height: 66px;
+  max-height: 80px;
   min-width: 125px;
   width: auto;
 }

@@ -40,13 +40,16 @@ if ($query->have_posts()): ?>
                     $query->the_post();
                     $title     = get_the_title();
                     $post_id   = get_the_ID();
+                    $lightbox_url = get_the_post_thumbnail_url($post_id, 'full');
                     $image_url = get_the_post_thumbnail_url($post_id, 'medium'); ?>
                     
                     <div class="col-12 col-md-4 col-lg-3 product-feed__item">
                         <div class="product-card">
                             <?php if ($image_url): ?>
                                 <div class="product-card__image">
-                                    <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>">
+                                    <a href="<?php echo esc_url($lightbox_url); ?>" class="glightbox">
+                                        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>">
+                                    </a>
                                 </div>
                             <?php endif; ?>
                             <div class="product-card__title bg-primary p-4 fw-normal">

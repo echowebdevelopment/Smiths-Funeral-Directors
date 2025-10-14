@@ -1,4 +1,16 @@
 // Add your JS customizations here
+
+// jQuery(document).ready(function($) {
+// 	const lightbox = GLightbox({
+// 		selector: '.glightbox',  // default
+// 		openEffect: 'zoom',      // fade, zoom, none
+// 		closeEffect: 'fade',
+// 		slideEffect: 'slide',
+// 		touchNavigation: true,
+// 		keyboardNavigation: true,
+// 	});
+// });
+
 class Accordion {
 	constructor(el) {
 		// Store the <details> element

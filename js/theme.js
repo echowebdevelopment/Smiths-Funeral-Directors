@@ -6123,6 +6123,16 @@
   })();
 
   // Add your JS customizations here
+  // jQuery(document).ready(function($) {
+  // 	const lightbox = GLightbox({
+  // 		selector: '.glightbox',  // default
+  // 		openEffect: 'zoom',      // fade, zoom, none
+  // 		closeEffect: 'fade',
+  // 		slideEffect: 'slide',
+  // 		touchNavigation: true,
+  // 		keyboardNavigation: true,
+  // 	});
+  // });
   var Accordion = /*#__PURE__*/function () {
     function Accordion(el) {
       var _this = this;

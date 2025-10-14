@@ -140,7 +140,7 @@ $linkedin = get_field( 'linkedin', 'option' );
 							<img src="<?php echo esc_url( get_template_directory_uri() . '/img/bielogo.png' ); ?>" alt="Golden Charter Logo" class="Bie Logo">
 						</div>
 						<div class="col-sm-3 col-6 text-center">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/img/iso-logo.svg' ); ?>" alt="ISO Logo">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/img/iso-quality-assured.png' ); ?>" alt="ISO Logo">
 						</div>
 					</div>
 					<div class="col-12 col-xl-6 row">

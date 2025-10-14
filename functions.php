@@ -107,6 +107,34 @@ function enqueue_usp_slick_slider() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_usp_slick_slider' );
 
+function glightbox_init() {
+    // Enqueue CSS and JS
+    wp_enqueue_style( 'glightboxcss', get_template_directory_uri() . '/css/glightbox.css' );
+    wp_enqueue_script( 'glightboxjs', get_template_directory_uri() . '/js/glightbox.js', array(), null, true );
+
+    // Inline initialization (attached to 'glightboxjs')
+    $init_script = "
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const lightbox = GLightbox({
+        //         selector: '.glightbox',
+        //         openEffect: 'zoom',
+        //         closeEffect: 'fade',
+        //         slideEffect: 'slide',
+        //         touchNavigation: true,
+        //         keyboardNavigation: true,
+        //     });
+        // });
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    ";
+
+    wp_add_inline_script( 'glightboxjs', $init_script );
+}
+add_action( 'wp_enqueue_scripts', 'glightbox_init' );
+
 
 add_filter('acf/settings/save_json', function() {
     return get_stylesheet_directory() . '/acf-json';
@@ -123,5 +151,21 @@ add_action('pre_get_posts', function ($query) {
         // some condition...
         $query->set('posts_per_page', 6); // fine
         $query->set('paged', get_query_var('paged')); // THIS is usually unnecessary here
+    }
+});
+
+add_action('wpcf7_mail_sent', function ($contact_form) {
+    $submission = WPCF7_Submission::get_instance();
+    if (!$submission) return;
+    
+    $uploaded_files = $submission->uploaded_files();
+    foreach ($uploaded_files as $field_name => $file_path) {
+        if (file_exists($file_path)) {
+            $filename = basename($file_path);
+            $upload_file = wp_upload_bits($filename, null, file_get_contents($file_path));
+            if (!$upload_file['error']) {
+                // Optional: you can log or send this $upload_file['url'] to HubSpot here
+            }
+        }
     }
 });

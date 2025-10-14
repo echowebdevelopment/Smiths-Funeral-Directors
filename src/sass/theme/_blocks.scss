@@ -106,6 +106,7 @@ body.understrap-no-sidebar {
 		color: $white;
 		max-width: max-content;
     	text-shadow: 2px 2px 10px rgba(0, 0, 0, .7);
+		min-width: 450px;
 		h1 {
 			// font-weight: 300 !important;
 		}
