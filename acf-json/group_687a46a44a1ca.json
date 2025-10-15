@@ -213,6 +213,28 @@
                     "parent_repeater": "field_6880fbd54a8ab"
                 },
                 {
+                    "key": "field_68ef6890a8d53",
+                    "label": "Image Label",
+                    "name": "image_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6880fbd54a8ab"
+                },
+                {
                     "key": "field_687a4872c7a8e",
                     "label": "Buttons",
                     "name": "buttons_text_image",
@@ -234,6 +256,7 @@
                     "collapsed": "",
                     "button_label": "Add Row",
                     "rows_per_page": 20,
+                    "parent_repeater": "field_6880fbd54a8ab",
                     "sub_fields": [
                         {
                             "key": "field_687a48e950b2a",
@@ -253,8 +276,7 @@
                             "allow_in_bindings": 0,
                             "parent_repeater": "field_687a4872c7a8e"
                         }
-                    ],
-                    "parent_repeater": "field_6880fbd54a8ab"
+                    ]
                 },
                 {
                     "key": "field_687a493641091",
@@ -344,5 +366,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1753283609
+    "modified": 1760520345
 }

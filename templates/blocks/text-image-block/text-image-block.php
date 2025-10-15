@@ -46,6 +46,7 @@ $section_title = get_field('page_section_title');
         $lead_paragraph   = get_sub_field('lead_paragraph_text_image');
         $content          = get_sub_field('content_text_image');
         $acf_image        = get_sub_field('image_text_image');
+        $image_label      = get_sub_field('image_label');
         $position_image   = get_sub_field('position_image_text_image');
 
         // Layout helpers
@@ -119,6 +120,8 @@ $section_title = get_field('page_section_title');
                                 'loading' => 'lazy',
                                 'alt'     => esc_attr($alt),
                             ));
+
+                            echo '<p class="mt-2">'.$image_label.'</p>';
                             ?>
                         </div>
                     <?php endif; ?>
