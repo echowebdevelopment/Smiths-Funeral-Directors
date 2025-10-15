@@ -1,10 +1,17 @@
 <?php get_header(); ?>
 
 <?php 
-get_template_part( 'templates/blocks/page-title-block/page-title', 'block', [ 
-    'title' => 'Community & News', // Or use get_post_type_archive_title()
-] );
+// get_template_part( 'templates/blocks/page-title-block/page-title', 'block', [ 
+//     'title' => 'Community & News', // Or use get_post_type_archive_title()
+// ] );
 ?>
+
+<div class="page-title-block block py-5">
+    <div class="text-block__header mb-0">
+        <h1 class="text-block__heading">Community &amp; News</h1>
+    </div>
+    <img src="<?php echo get_template_directory_uri(); ?>/img/community-news-header.jpg" class="text-block__img img-fluid img-center" loading="lazy" alt="Community &amp; News">
+</div>
 
 <div class="container py-5">
     <?php
